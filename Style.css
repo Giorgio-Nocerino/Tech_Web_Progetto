@@ -1,0 +1,241 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 760px;
+}
+
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+
+.primo_pezzo{
+    width: 1000px;
+    padding: 20px;
+    background-color: transparent;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.primo_pezzo h1{
+    color: white;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 56px;
+}
+
+.secondo_pezzo .area_ricerca .search{
+    width: 517px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    position: absolute;
+    top:23%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-indent: 65px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+
+}
+
+.secondo_pezzo .area_ricerca .bottom{
+    position: absolute;
+    top: 23%;
+    left:35%;
+    transform: translate(-50%, -50%);
+    nav-left: 0;
+    width: 60px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+
+.search::placeholder {
+    position: absolute;
+    top: 20%;
+    left:0%;
+}
+
+
+
+.area_ricerca .bottom:hover{
+    background: transparent;
+}
+
+.area_ricerca .bottom.btm .fa-solid{ /*Immagine logo*/
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    transform: translate(0, -15);
+    color: #000;
+    font-size: 20px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    z-index: 100;
+    top: 5vh;
+    left: 5vw;
+    padding-bottom: 2vh;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    transition: 0.7s ease-in-out;
+    transform: none;
+    cursor: pointer;
+
+}
+
+#open_menu:checked ~ .menu-pane {
+    left: -126px;
+    transform: translateX(-126px);
+    background-color: lightgrey;
+    z-index: 99;
+}
+
+
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(2) {
+    transform: translate(0%, 175%) rotate(-45deg);
+    background-color: white;
+}
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(3) {
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(1) {
+    opacity: 0;
+}
+
+div.menu-pane {
+    background-color: transparent;
+    position: absolute;
+    transform: translateX(-105vw);
+    width: 50vw;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-pane p {
+    color: black;
+    font-size: 0.6em;
+}
+
+.menu-pane nav {
+    padding: 10%;
+}
+
+.menu-links li, a, span {
+    transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+    padding: 10%;
+    display: inline-block;
+}
+
+.menu-pane li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+
+.menu-pane li:first-child {
+    font-size: 1.3em;
+    margin-left: -10px;
+}
+
+
+.menu-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu-links li:hover a {
+    color: #FFAB91;
+}
+
+.menu-links li:first-child:hover a {
+    color: black;
+    background-color: #FFAB91;
+}
+
+#QC-info {
+    background-color: #FFAB91;
+    border: 2px solid;
+    border-color: #FFAB91;
+    display: block;
+    opacity: 0;
+
+}
+
+.menu-links li:first-child:hover #QC-info {
+    opacity: 1;
+}
+
+.menu-links li:first-child:hover #DC-info {
+    opacity: 1;
+}
+
+#DC-info {
+    background-color: #FFAB91;
+    border: 2px solid;
+    border-color: #FFAB91;
+    display: block;
+    opacity: 0;
+}
+
+
+.menu-links li:first-child a {
+    padding: 5px;
+}
+
+
+
+input.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    top: 5vh;
+    left: 5vw;
+    width: 3vw;
+    opacity: 0;
+    height: 6vh;
+    cursor: pointer;
+}
+
+.terzo_pezzo .navbar{
+    width: 750px;
+    left: 20%;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 40;
+    background-color: #3F0718;
+}
+
+.navbar ul{
+    float: left;
+}
+
+.navbar ul li{
+    float:left;
+}
