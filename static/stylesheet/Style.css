@@ -237,7 +237,7 @@ input.hamburger-checkbox {
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
 .dropbtn p{
@@ -270,6 +270,7 @@ input.hamburger-checkbox {
     text-decoration: none;
     display: block;
     border-radius: 10px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
 .dropdown-content a:hover {
