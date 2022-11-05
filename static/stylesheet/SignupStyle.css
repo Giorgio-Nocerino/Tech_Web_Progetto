@@ -1,0 +1,297 @@
+
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 760px;
+}
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+
+.primo_pezzo h1{
+    color:white;
+    font-family: 'Comforter Brush', cursive;
+    width:800px;
+    height:300px;
+    margin-top:200px;
+    margin-bottom:200px;
+    margin-right:50px;
+    margin-left:50px;
+    font-size:72px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.pezzo_grande .secondo_pezzo{
+    width: 400px;
+    height: 720px;
+    border-radius: 15px;
+    background-color: #b4afaf;
+    position: absolute;
+    top:50%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.pezzo_grande .avvertenze{
+    width: 505px;
+    height: 195px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    background-color: #b4afaf;
+    border-radius: 15px;
+}
+
+.pezzo_grande .avvertenze p{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    text-align: center;
+}
+
+.pezzo_grande .secondo_pezzo .testo_name .testo_nome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_surname .testo_cognome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_username #username{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_email #email{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_pwd #password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .conf_pwd #conf_password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_name #nome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_surname #cognome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .button #submit{
+    background-color: #6a6a6a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.pezzo_grande .secondo_pezzo .forget .forget_btm .pulsante2{
+    background-color: #6a6a6a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+}
+
+.pezzo_grande .secondo_pezzo .loginer .log_btm .linke .pulsante2{
+    background-color: #ffffff;
+    color: #6a6a6a;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+img{
+    width:45px;
+    height:45px;
+    margin:10px;
+    transition: transform .2s; /*animazione che si allaccia con transfrom*/
+}
+
+a{
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.avvertenze .error1{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+
+.avvertenze .error2{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.avvertenze .error3{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.avvertenze .error4{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.avvertenze .error5{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.avvertenze .error6{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .pezzo_grande .secondo_pezzo {
+        top: 60%;
+    }
+}
+@media screen and (max-height: 742px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .pezzo_grande .secondo_pezzo {
+        top: 60%;
+    }
+}
+@media screen and (max-height: 626px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .pezzo_grande .secondo_pezzo {
+        top: 70%;
+    }
+}
+#submit:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+button:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+img:hover{
+    transform: scale(1.3);
+}

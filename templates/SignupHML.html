@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup HorrorMovieland</title>
+    <link rel="stylesheet" href="/static/stylesheet/SignupStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="pezzo_grande">
+                <div class="primo_pezzo">
+                    <h1>Benvenuto. Registrati su questo sito e potrai vedere molti film di paura!</h1>
+                </div>
+                <div class="secondo_pezzo">
+                    <div class="scritta">
+                        <p>Inserisci i campi per registrare</p>
+                    </div>
+                    <form method="POST" action="{{ request.path }}">
+                        {{form.hidden_tag()}}
+
+                        {{ form.csrf_token }}
+
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+
+                        {% if messages %}
+                        {% for category, message in messages %}
+                        <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                        {% if request.path == '/signup' %}
+                    <div class="testo_name">
+                        <!--<input type="text" name="nome" class="testo_nome" placeholder="inserisci il nome">-->
+                        {{form.nome}}
+                    </div>
+                    <div class="testo_surname">
+                        <!--<input type="text" name="cognome" class="testo_cognome" placeholder="inserisci il cognome">-->
+                        {{form.cognome}}
+                    </div>
+                    <div class="testo_email">
+                        {{form.email}}
+
+                    </div>
+                    <div class="testo_username">
+                        {{form.username}}
+
+                    </div>
+                    <div class="testo_pwd">
+                        <!--<input type="password" class="parola" placeholder="inserisci la password">-->
+                        {{form.password}}
+
+                    </div>
+                    <div class="conf_pwd">
+                        {{form.conf_password}}
+                    </div>
+
+                    <div class="button">
+                        {{form.submit}}
+                    </div>
+
+                    <div class="loginer">
+                        <p>Hai già un account?</p>
+                        <div class="log_btm">
+                            <a href="{{url_for('login')}}" class="linke">
+                                <button class="pulsante2">ACCEDI</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="forlogin">
+                        <p>Oppure registrati con:</p>
+                        <div class="foreign">
+                            <a href=""><img class="img1" src="/static/images/google.png" alt="Google"></a>
+                            <a href=""><img src="/static/images/facebook.png" alt="Facebook"></a>
+                            <a href=""><img src="/static/images/instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="avvertenze">
+                <div class="titolo">
+                    <p>Qui sono riportati i seguenti errori nel caso la registrazione non va a buon fine:</p>
+                </div>
+                <div class="error1">
+                    {% for error in form.email.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error2">
+                    {% for error in form.username.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error3">
+                    {% for error in form.password.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error4">
+                    {% for error in form.conf_password.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                  <div class="error5">
+                      {% for error in form.nome.errors %}
+                      {{ error }}
+                      {% endfor%}
+                  </div>
+                  <div class="error6">
+                      {% for error in form.cognome.errors %}
+                      {{ error }}
+                      {% endfor%}
+                  </div>
+            </div>
+            {% endif%}
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 760px;
+}
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+div{
+    text-align: center;
+}
+.primo_pezzo h1{
+    color:white;
+    font-family: 'Comforter Brush', cursive;
+    width:800px;
+    height:300px;
+    margin-top:200px;
+    margin-bottom:200px;
+    margin-right:50px;
+    margin-left:50px;
+    font-size:72px;
+    text-align: center;
+
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.pezzo_grande .secondo_pezzo{
+    width: 400px;
+    height: 620px;
+    border-radius: 15px;
+    background-color: #b4afaf;
+    position: absolute;
+    top:50%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pezzo_grande .secondo_pezzo .testo_user #username{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .testo_pwd #password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.pezzo_grande .secondo_pezzo .bottom #submit{
+    background-color: #6a6a6a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.pezzo_grande .secondo_pezzo .forget .forget_btm .pulsante2{
+    background-color: #6a6a6a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.pezzo_grande .secondo_pezzo .register .reg_btm .linka .pulsante3{
+    background-color: #ffffff;
+    color: #6a6a6a;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+img{
+    width:45px;
+    height:45px;
+    margin:10px;
+    transition: transform .2s /*animazione che si allaccia con transfrom*/
+}
+a{
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.error{
+    margin: 10px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .pezzo_grande .secondo_pezzo {
+        top: 50%;
+    }
+}
+@media screen and (max-height: 742px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .pezzo_grande .secondo_pezzo {
+        top: 60%;
+    }
+}
+@media screen and (max-height: 626px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .pezzo_grande .secondo_pezzo {
+        top: 70%;
+    }
+}
+button:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+#submit:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+img:hover{
+    transform: scale(1.3);
+}
+
+
