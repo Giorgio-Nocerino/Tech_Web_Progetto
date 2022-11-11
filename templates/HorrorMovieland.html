@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="/static/stylesheet/Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
     <title>Horror Movieland</title>
 </head>
  <body>
@@ -59,7 +58,8 @@
           </div>
 
         {% if current_user.is_authenticated %}
-        <h1>Ciao {{ current_user.username }}, benvenuto su Horror Movieland!</h1>
+        <h1 class="h1first">Ciao {{ current_user.username }}, benvenuto su </h1>
+          <h1 class="h1second"> Horror Movieland!</h1>
         {% endif %}
     </div>
     <div class="secondo_pezzo">

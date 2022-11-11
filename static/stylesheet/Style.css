@@ -18,10 +18,18 @@ html{
     text-align: center;
 }
 
-.primo_pezzo h1{
+.primo_pezzo h1.h1first{
     color: white;
-    font-family: 'Comforter Brush', cursive;
-    font-size: 56px;
+    font-family: "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+}
+
+.primo_pezzo h1.h1second{
+    color: white;
+    font-family: "Copperplate Gothic", fantasy;
+    font-size: 50px;
+    position: relative;
+    top:-30px;
 }
 
 .secondo_pezzo .area_ricerca .search{
