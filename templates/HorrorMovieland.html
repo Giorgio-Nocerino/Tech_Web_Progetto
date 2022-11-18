@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="/static/stylesheet/Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
     <title>Horror Movieland</title>
 </head>
  <body>
@@ -25,30 +31,28 @@
           </div>
 
           <div class="menu-pane">
-
               <nav>
-                  <ul class="menu-links">
-
-                      <li><a href="###">déjeuner</a>
-
-                      </li>
-                      <li><a href="###">boulangerie</a></li>
-                      <li><a href="###">boissons</a></li>
-                  </ul>
-                  <ul class="menu-links">
-                      <li><a href="###">Washington, DC</a>
-                          <span id="DC-info">
-            <p>+1 202-472-3850</p>
-          </span></li>
-
-                      <li><a href="###">breakfast</a></li>
-                      <li><a href="###">
-                          bakery
-                      </a></li>
-                      <li><a href="###">bar</a></li>
-                  </ul>
-
-
+                  <div class="lateral">
+                      <div class="manual">
+                          <img src="/static/images/manual-icon%201.png" alt="manual" id="imgManual">
+                          <div class="writeManual">
+                              <p id="nomeManual">Manuale d'uso</p>
+                          </div>
+                      </div>
+                      <div class="account">
+                          <img src="/static/images/user.png" alt="manual" id="imgAccount">
+                          <div class="writeAccount">
+                              <p id="nomeAccount">Account</p>
+                          </div>
+                      </div>
+                      <div class="logout">
+                          <div class="logout_btm">
+                              <a href="{{url_for('logout')}}" class="link_logout">
+                                  <button class="logout_push">LOGOUT</button>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
               </nav>
           </div>
 
@@ -58,7 +62,6 @@
         {% endif %}
     </div>
     <div class="secondo_pezzo">
-
         <div class="area_ricerca"> <!--posizione area di ricerca-->
             <!--<center>-->
             <div class="bottom btm"> <!--icona search-->
@@ -72,7 +75,15 @@
           <div class="navbar">
               <div class="dropdown">
                   <button class="dropbtn"><p>Al Cinema</p></button>
-
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn"><p>Attori</p></button>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn"><p>Film A-Z</p></button>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn"><p>Cerca</p></button>
               </div>
           </div>
      </div>
