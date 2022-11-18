@@ -133,22 +133,79 @@ html{
 div.menu-pane {
     background-color: transparent;
     position: absolute;
+    top: 0;
     transform: translateX(-105vw);
     width: 539px;
-    height: 1080px;
+    height: 760px;
     transition: 0.5s ease-in-out;
 }
 
 .menu-pane p {
     color: black;
-    font-size: 0.6em;
+    font-size: 26px;
+    font-family: 'Barlow', sans-serif;
 }
 
 .menu-pane nav {
     padding: 10%;
 }
 
-.menu-links li, a, span {
+.menu-pane .lateral .manual #imgManual{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 1vw;
+    transform: translateY(5vw);
+}
+
+.menu-pane .lateral .manual .writeManual #nomeManual{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 2vw;
+    transform: translateY(4vw);
+}
+
+.menu-pane .lateral .account #imgAccount{
+    position: relative;
+    float: left;
+    top: 0;
+    left: -12vw;
+    transform: translateY(9vw);
+    width: 45px;
+    height: 47.41px;
+}
+
+.menu-pane .lateral .account .writeAccount #nomeAccount{
+    position: relative;
+    float: left;
+    top: 0;
+    left: -11vw;
+    transform: translateY(8vw);
+}
+
+.menu-pane .lateral .logout .logout_btm .link_logout .logout_push{
+    background-color: #6a6a6a;
+    position: relative;
+    top: 33vw;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .logout_btm .link_logout .logout_push:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+
+/*.menu-links li, a, span {
     transition: 0.5s ease-in-out;
 }
 
@@ -214,7 +271,7 @@ div.menu-pane {
 
 .menu-links li:first-child a {
     padding: 5px;
-}
+}*/
 
 
 
@@ -230,7 +287,7 @@ input.hamburger-checkbox {
 }
 
 .terzo_pezzo .navbar{
-    width: 739px;
+    width: 45vw;
     position: relative;
     text-align: center;
     top: 50%;
@@ -257,9 +314,25 @@ input.hamburger-checkbox {
     top:-20px;
 }
 
-.dropdown {
+.dropdown:nth-of-type(1) {
     position: relative;
     float:left;
+    display: inline-block;
+}
+.dropdown:nth-of-type(2) {
+    position: relative;
+    float:left;
+    display: inline-block;
+}
+
+.dropdown:nth-of-type(3) {
+    position: relative;
+    float:right;
+    display: inline-block;
+}
+.dropdown:nth-of-type(4) {
+    position: relative;
+    float:right;
     display: inline-block;
 }
 
