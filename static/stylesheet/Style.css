@@ -118,12 +118,12 @@ html{
 
 #open_menu:checked ~ .hamburger-icon span:nth-of-type(2) {
     transform: translate(0%, 175%) rotate(-45deg);
-    background-color: white;
+    background-color: black;
 }
 
 #open_menu:checked ~ .hamburger-icon span:nth-of-type(3) {
     transform: rotate(45deg);
-    background-color: white;
+    background-color: black;
 }
 
 #open_menu:checked ~ .hamburger-icon span:nth-of-type(1) {
@@ -287,56 +287,127 @@ input.hamburger-checkbox {
 }
 
 .terzo_pezzo .navbar{
-    width: 45vw;
     position: relative;
-    text-align: center;
-    top: 50%;
-    transform:translateY(-50%);
-    height: 40px;
-    border-radius: 10px;
     margin: 0 auto;
-    background-color: #3F0718;
+    text-align: center;
 }
 
-.dropbtn {
-    background-color: transparent;
-    height: 40px;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+.terzo_pezzo .navbar .dropdown1 .dropbtn1{
+    position: relative;
+    float: left;
+    display: inline-block;
     border: none;
     border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #434141, #222222);
+    left: 13vw;
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
-.dropbtn p{
-  position: relative;
-    top:-20px;
+.terzo_pezzo .navbar .dropdown2 .dropbtn2{
+    position: relative;
+    float: left;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #434141, #222222);
+    left: 15vw;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
-.dropdown:nth-of-type(1) {
+.terzo_pezzo .navbar .dropdown3 .dropbtn3{
     position: relative;
-    float:left;
+    float: right;
     display: inline-block;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #434141, #222222);
+    right: 13vw;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
-.dropdown:nth-of-type(2) {
+.terzo_pezzo .navbar .dropdown4 .dropbtn4{
     position: relative;
-    float:left;
+    float: right;
     display: inline-block;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #434141, #222222);
+    opacity: 70%;
+    right: 15vw;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
-.dropdown:nth-of-type(3) {
+
+.quarto_pezzo .quart{
     position: relative;
-    float:right;
-    display: inline-block;
-}
-.dropdown:nth-of-type(4) {
-    position: relative;
-    float:right;
-    display: inline-block;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-
-.dropdown:hover .dropbtn {
-    background-color: #2a050e;
+.quarto_pezzo .quart .prima_casella .box1{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    opacity: 70%;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
+
+.quarto_pezzo .quart .seconda_casella .box2{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    opacity: 70%;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+.quarto_pezzo .quart .terza_casella .box3{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    opacity: 70%;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+.quarto_pezzo .quart .quarta_casella .box4{
+    position: relative;
+    width: 227px;
+    height: 282px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    opacity: 70%;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+.quarto_pezzo .quart .quinta_casella .box5{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    opacity: 70%;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
