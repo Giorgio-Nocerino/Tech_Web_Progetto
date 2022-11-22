@@ -140,6 +140,13 @@ div.menu-pane {
     transition: 0.5s ease-in-out;
 }
 
+.menu-pane a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
 .menu-pane p {
     color: black;
     font-size: 26px;
@@ -179,30 +186,9 @@ div.menu-pane {
 .menu-pane .lateral .account .writeAccount #nomeAccount{
     position: relative;
     float: left;
-    top: 0;
+    top: 1em;
     left: -11vw;
     transform: translateY(8vw);
-}
-
-.menu-pane .lateral .logout .logout_btm .link_logout .logout_push{
-    background-color: #6a6a6a;
-    position: relative;
-    top: 33vw;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 4px 2px;
-    width: 150px;
-    height: 40px;
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
-}
-
-.menu-pane .lateral .logout_btm .link_logout .logout_push:hover{
-    box-shadow: 5px 5px 10px grey;
 }
 
 input.hamburger-checkbox {
