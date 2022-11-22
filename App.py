@@ -114,6 +114,11 @@ def signup():
 def homepage():
     return render_template('HorrorMovieland.html')
 
+@app.route('/homepage/account', methods=['GET', 'POST'])
+@login_required
+def account():
+    return render_template('Account.html')
+
 
 
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
