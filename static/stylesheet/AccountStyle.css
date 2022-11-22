@@ -1,0 +1,56 @@
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+}
+
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 760px;
+}
+
+.h1_first{
+    width: 1000px;
+    padding: 20px;
+    background-color: transparent;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.h1_first h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+}
+
+.second_part{
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: #302C2C;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.second_part .button .logout_btm .link_logout .logout_push{
+    background-color: #982626;
+    position: relative;
+    top: 28vw;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.second_part .button .logout_btm .link_logout .logout_push:hover{
+    box-shadow: 5px 5px 10px #1c1a1a;
+}
