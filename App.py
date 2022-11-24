@@ -46,12 +46,12 @@ class SignupForm(FlaskForm):
       def validate_email(self, email):
                 alrexi_email = User.query.filter_by(email=email.data).first()
                 if alrexi_email:
-                   raise ValidationError("Email già esistente. Sceglitela un'altra")
+                   raise ValidationError("Email già esistente. Sceglitene un'altra")
 
       def validate_username(self, username):
           alrexi_username = User.query.filter_by(username=username.data).first()
           if alrexi_username:
-             raise ValidationError("Username già esistente. Sceglitelo un altro")
+             raise ValidationError("Username già esistente. Sceglitene un altro")
 
 
 
