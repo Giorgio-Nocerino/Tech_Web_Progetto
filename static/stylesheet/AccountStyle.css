@@ -17,10 +17,28 @@ body{
     text-align: center;
 }
 
+img#image{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
 .h1_first h1{
     color: white;
     font-family: "Barlow", sans-serif;
     font-size: 30px;
+}
+
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.return #image{
+    position: relative;
+    float: left;
+    top:35px;
+    left:60px;
 }
 
 .second_part{
