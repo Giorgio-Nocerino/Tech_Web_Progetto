@@ -17,6 +17,10 @@
     <title>Account Profile</title>
 </head>
 <body>
+
+  <div class="return">
+      <a href="{{url_for('homepage')}}"><img src="/static/images/return.png" alt="Google" id="image"></a>
+   </div>
   <div class="h1_first">
       <h1> Informazioni dell'account {{ current_user.username }}</h1>
   </div>
