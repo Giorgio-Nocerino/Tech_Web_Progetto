@@ -25,7 +25,7 @@ body{
 
 .second_part{
     width: 700px;
-    height: 500px;
+    height: 430px;
     border-radius: 15px;
     background-color: #302C2C;
     position: relative;
@@ -37,7 +37,7 @@ body{
 .second_part .button .logout_btm .link_logout .logout_push{
     background-color: #982626;
     position: relative;
-    top: 28vw;
+    top: 6vw;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -49,6 +49,39 @@ body{
     width: 150px;
     height: 40px;
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+
+.second_part .lightgrey_part{
+    background-color: #B4AFAF;
+    position: relative;
+    top:5%;
+    left:50%;
+    transform: translate(-50%);
+    width: 40em;
+    height: 15em;
+    border-radius: 15px;
+}
+
+.lightgrey_part p{
+    font-size: 24px;
+    font-family: "Barlow", sans-serif;
+}
+
+.lightgrey_part .e1{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.lightgrey_part .e2{
+    display: flex;
+    position: relative;
+    top:-15vw;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 20px;
 }
 
 .second_part .button .logout_btm .link_logout .logout_push:hover{
