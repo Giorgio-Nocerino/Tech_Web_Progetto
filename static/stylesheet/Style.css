@@ -189,6 +189,7 @@ div.menu-pane {
     top: 1em;
     left: -11vw;
     transform: translateY(8vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
 input.hamburger-checkbox {
