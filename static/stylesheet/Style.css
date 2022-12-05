@@ -168,9 +168,10 @@ div.menu-pane {
 .menu-pane .lateral .manual .writeManual #nomeManual{
     position: relative;
     float: left;
-    top: 0;
+    top: 1em;
     left: 2vw;
     transform: translateY(4vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
 .menu-pane .lateral .account #imgAccount{
