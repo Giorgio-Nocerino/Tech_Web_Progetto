@@ -114,6 +114,11 @@ def signup():
 def homepage():
     return render_template('HorrorMovieland.html')
 
+@app.route('/homepage/manual', methods=['GET', 'POST'])
+@login_required
+def manual():
+    return render_template('Manual.html')
+
 @app.route('/homepage/account', methods=['GET', 'POST'])
 @login_required
 def account():
