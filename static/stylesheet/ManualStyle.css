@@ -1,0 +1,26 @@
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+}
+
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 760px;
+}
+
+.mother_place{
+    width:80em;
+    height: auto;
+    background-color: #6c6c6c;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.mother_place p{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-family: "Barlow", sans-serif;
+}
