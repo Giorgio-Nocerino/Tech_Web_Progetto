@@ -30,7 +30,7 @@ p{
 
 .pezzo_grande .secondo_pezzo{
     width: 400px;
-    height: 720px;
+    height: 470px;
     border-radius: 15px;
     background-color: #b4afaf;
     position: absolute;
@@ -177,19 +177,22 @@ p{
     height: 40px;
 }
 
-.pezzo_grande .secondo_pezzo .loginer .log_btm .linke .pulsante2{
-    background-color: #ffffff;
-    color: #6a6a6a;
-    border: none;
-    border-radius: 8px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
+.pezzo_grande .alreadyaccount p {
+    color: #ffffff;
     font-size: 18px;
-    margin: 4px 2px;
-    width: 150px;
-    height: 40px;
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    position: relative;
+    float: right;
+    top:-6vw;
+    right:15em;
+    transform: translate(6, -15em);
+}
+
+.pezzo_grande .alreadyaccount p .linke{
+    color: white;
+    text-decoration: none;
+}
+.pezzo_grande .alreadyaccount p .linke:hover{
+    color: yellow;
 }
 
 img{
