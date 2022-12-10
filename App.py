@@ -2,19 +2,27 @@ from flask import Flask, render_template, url_for, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
-
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError, Regexp, EqualTo
 from flask_bcrypt import Bcrypt
+from authlib.integrations.flask_client import OAuth
+
+
+import os
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
+oauth = OAuth(app)
+app.secret_key = os.urandom(12)
 
 
-login_manager = LoginManager()
+
+login_manager = LoginManager(app)
 login_manager.init_app(app)
 login_manager.login_view = "login"
 
@@ -23,13 +31,21 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
+
 class User(db.Model, UserMixin):
+   __tablename__ = 'User'
+
    id = db.Column(db.Integer, primary_key=True)
    nome = db.Column(db.String(50), nullable=False)
    cognome = db.Column(db.String(50), nullable=False)
    email = db.Column(db.String(80), nullable=False, unique=True)
    username = db.Column(db.String(20), nullable=False, unique=True)
    password = db.Column(db.String(80), nullable=False)
+
+
+#class OAuth(OAuthConsumerMixin, db.Model):
+#   user_id = db.Column(db.Integer, db.ForeignKey(User.id))
+#   user = db.relationship(User)
 
 
 
@@ -62,6 +78,9 @@ class LoginForm(FlaskForm):
       submit = SubmitField("ACCEDI")
 
 
+
+
+
 @app.route('/')
 def home():
    return render_template('Prepage.html')
@@ -84,11 +103,40 @@ def login():
 
    return render_template('LoginHML.html', form=form, msg=msg)
 
+@app.route('/google/')
+def google():
+
+    GOOGLE_CLIENT_ID = '393401022050-3f2qujg19c5l6chs8ga1a125p92l1v9p.apps.googleusercontent.com'
+    GOOGLE_CLIENT_SECRET = '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'
+    CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
+    oauth.register(
+        name='google',
+        client_id=GOOGLE_CLIENT_ID,
+        client_secret=GOOGLE_CLIENT_SECRET,
+        server_metadata_url=CONF_URL,
+        client_kwargs={
+            'scope': 'openid email profile'
+        }
+    )
+
+    # Redirect to google_auth function
+    redirect_uri = url_for('google_auth', _external=True)
+    print(redirect_uri)
+    return oauth.google.authorize_redirect(redirect_uri)
+
+@app.route('/google/auth/')
+def google_auth():
+    token = oauth.google.authorize_access_token()
+    current_user['username'] = token['userinfo']
+    #user = oauth.google.parse_id_token(token)
+    return redirect('/homepage')
+
+
 @app.route('/logout', methods=['GET', 'POST'])
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    return redirect(url_for('home'))
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -126,6 +174,7 @@ def account():
 
 
 
+
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
-    app.run(debug=True)
+    app.run(host="localhost", port=8000, debug=True)
 # Store this code in 'app.py' file
