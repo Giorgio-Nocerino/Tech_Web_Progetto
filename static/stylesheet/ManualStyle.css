@@ -9,6 +9,10 @@ body{
     background-size: 1536px 760px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .mother_place{
     width:80em;
     height: auto;
@@ -16,6 +20,7 @@ body{
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    border-radius: 15px;
 }
 
 .mother_place p{
@@ -23,4 +28,30 @@ body{
     font-size: 36px;
     color: white;
     font-family: "Barlow", sans-serif;
+}
+
+img{
+    width:1000px;
+    height:500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#image{
+    width:35px;
+    height:35px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+#image:hover{
+    transform: rotate(-360deg);
+}
+
+.return #image{
+    position: relative;
+    top:15px;
+    left:50%;
+    transform: translate(-50%);
 }
