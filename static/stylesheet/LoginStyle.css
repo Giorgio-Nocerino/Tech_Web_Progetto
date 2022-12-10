@@ -32,7 +32,7 @@ p{
 
 .pezzo_grande .secondo_pezzo{
     width: 400px;
-    height: 620px;
+    height: 500px;
     border-radius: 15px;
     background-color: #b4afaf;
     position: absolute;
@@ -94,19 +94,22 @@ p{
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
-.pezzo_grande .secondo_pezzo .register .reg_btm .linka .pulsante3{
-    background-color: #ffffff;
-    color: #6a6a6a;
-    border: none;
-    border-radius: 8px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
+.pezzo_grande .newaccount p {
+    color: #ffffff;
     font-size: 18px;
-    margin: 4px 2px;
-    width: 150px;
-    height: 40px;
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    position: relative;
+    float: right;
+    top:2vw;
+    right:6em;
+    transform: translate(2, -6em);
+}
+
+.pezzo_grande .newaccount p .linke{
+    color: white;
+    text-decoration: none;
+}
+.pezzo_grande .newaccount p .linke:hover{
+    color: yellow;
 }
 
 img{
