@@ -24,7 +24,7 @@
              <div class="scritta">
                 <p>Inserisci i campi per registrare</p>
              </div>
-             <form method="POST" action="{{ request.path }}">
+              <form method="POST" action="{{ request.path }}">
                 {{form.hidden_tag()}}
 
                 <!--{{ form.csrf_token }}
@@ -69,23 +69,6 @@
                 <div class="button">
                     {{form.submit}}
                 </div>
-
-                <div class="loginer">
-                    <p>Hai già un account?</p>
-                    <div class="log_btm">
-                        <a href="{{url_for('login')}}" class="linke">
-                            <button class="pulsante2">ACCEDI</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="forlogin">
-                    <p>Oppure registrati con:</p>
-                    <div class="foreign">
-                        <a href=""><img class="img1" src="/static/images/google.png" alt="Google"></a>
-                        <a href=""><img src="/static/images/facebook.png" alt="Facebook"></a>
-                        <a href=""><img src="/static/images/instagram.png" alt="Instagram"></a>
-                    </div>
-                </div>
             </div>
                 <div class="avvertenze">
                 <div class="titolo">
@@ -124,6 +107,9 @@
             </div>
             {% endif%}
             </form>
+            <div class="alreadyaccount">
+                <p>Hai già un account?&nbsp;&nbsp;<a href="{{url_for('login')}}" class="linke">ACCEDI</a></p>
+            </div>
         </div>
 </body>
 </html>
