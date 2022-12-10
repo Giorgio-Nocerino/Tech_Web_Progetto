@@ -195,13 +195,6 @@ p{
     color: yellow;
 }
 
-img{
-    width:45px;
-    height:45px;
-    margin:10px;
-    transition: transform .2s; /*animazione che si allaccia con transfrom*/
-}
-
 a{
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
@@ -294,7 +287,4 @@ a{
 }
 button:hover{
     box-shadow: 5px 5px 10px grey;
-}
-img:hover{
-    transform: scale(1.3);
 }
