@@ -1,11 +1,10 @@
-from flask import Flask, render_template, url_for, redirect, flash
+from flask import Flask, render_template, url_for, redirect, flash, session, abort
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError, Regexp, EqualTo
 from flask_bcrypt import Bcrypt
-from authlib.integrations.flask_client import OAuth
 
 
 import os
@@ -17,8 +16,6 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
-oauth = OAuth(app)
-app.secret_key = os.urandom(12)
 
 
 
@@ -41,12 +38,6 @@ class User(db.Model, UserMixin):
    email = db.Column(db.String(80), nullable=False, unique=True)
    username = db.Column(db.String(20), nullable=False, unique=True)
    password = db.Column(db.String(80), nullable=False)
-
-
-#class OAuth(OAuthConsumerMixin, db.Model):
-#   user_id = db.Column(db.Integer, db.ForeignKey(User.id))
-#   user = db.relationship(User)
-
 
 
 class SignupForm(FlaskForm):
@@ -103,33 +94,7 @@ def login():
 
    return render_template('LoginHML.html', form=form, msg=msg)
 
-@app.route('/google/')
-def google():
 
-    GOOGLE_CLIENT_ID = '393401022050-3f2qujg19c5l6chs8ga1a125p92l1v9p.apps.googleusercontent.com'
-    GOOGLE_CLIENT_SECRET = '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'
-    CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
-    oauth.register(
-        name='google',
-        client_id=GOOGLE_CLIENT_ID,
-        client_secret=GOOGLE_CLIENT_SECRET,
-        server_metadata_url=CONF_URL,
-        client_kwargs={
-            'scope': 'openid email profile'
-        }
-    )
-
-    # Redirect to google_auth function
-    redirect_uri = url_for('google_auth', _external=True)
-    print(redirect_uri)
-    return oauth.google.authorize_redirect(redirect_uri)
-
-@app.route('/google/auth/')
-def google_auth():
-    token = oauth.google.authorize_access_token()
-    current_user['username'] = token['userinfo']
-    #user = oauth.google.parse_id_token(token)
-    return redirect('/homepage')
 
 
 @app.route('/logout', methods=['GET', 'POST'])
@@ -172,8 +137,44 @@ def manual():
 def account():
     return render_template('Account.html')
 
+############################################################################
+
+def login_is_required(function):
+    def wrapper(*args, **kwargs):
+      if "google_id" not in session:
+          return abort(401) #Autorizzazione richiesta
+      else:
+          return function()
+    return wrapper
 
 
+GOOGLE_CLIENT_ID = "393401022050-3f2qujg19c5l6chs8ga1a125p92l1v9p.apps.googleusercontent.com"
+client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
+
+flow = Flow.from_client_secrets_file(
+client_secrets_file=client_secrets_file,
+scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
+redirect_uri="http://localhost:8000/gcallback")
+
+@app.route('/glogin')
+def google_login():
+    authorization_url, state = flow.authorization_url()
+    session["state"] = state
+    return redirect(authorization_url)
+
+@app.route('/gcallback')
+def google_callback():
+    pass
+
+@app.route('/glogout')
+def google_logout():
+    session.clear()
+    return redirect('/login')
+
+@app.route('/gprotected_area')
+@login_is_required
+def google_protected_area():
+    return "protected! <a href ='/logout'><button>Logout</button></a>"
 
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
     app.run(host="localhost", port=8000, debug=True)
