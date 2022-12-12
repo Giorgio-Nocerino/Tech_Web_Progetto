@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     <title>Horror Movieland</title>
 </head>
  <body>
@@ -54,16 +56,6 @@
           <h1 class="h1second"> Horror Movieland!</h1>
           {% endif %}
     </div>
-    <div class="secondo_pezzo">
-        <div class="area_ricerca"> <!--posizione area di ricerca-->
-            <!--<center>-->
-            <div class="bottom btm"> <!--icona search-->
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <input type="text" class="search" placeholder="Inserisci il nome del film..">
-        </div>
-        <!--</center>-->
-    </div>
       <div class="terzo_pezzo">
           <div class="navbar">
               <div class="dropdown1">
@@ -81,24 +73,52 @@
           </div>
      </div>
       <div class="quarto_pezzo">
-          <div class="quart">
-              <div class="prima_casella">
-                  <button class="box1"></button>
+          <div class="movies">
+              <!--<div class="movie">
+                  <button class="box"><img src="/static/images/La%20casa%20di%20Jack.jpg" alt="" class="immagine"></button>
+                  <p class="title">La casa di Jack</p>
               </div>
-              <div class="seconda_casella">
-                  <button class="box2"></button>
+              <div class="movie">
+                  <button class="box"><img src="/static/images/The%20Northman.jpg" class="immagine"></button>
+                  <p class="title">The Northman</p>
               </div>
-              <div class="terza_casella">
-                  <button class="box3"></button>
+              <div class="movie">
+                  <button class="box"><img src="/static/images/La%20casa%20delle%20bambole.jpg" alt="" class="immagine"></button>
+                  <p class="title">La casa delle bambole</p>
               </div>
-              <div class="quarta_casella">
-                  <button class="box4"></button>
+              <div class="movie">
+                  <button class="box"><img src="/static/images/Midsommar.jpg" alt="" class="immagine"></button>
+                  <p class="title">Midsommar</p>
               </div>
-              <div class="quinta_casella">
-                  <button class="box5"></button>
-              </div>
+              <div class="movie">
+                  <button class="box"><img src="/static/images/Get%20Out.jpg" alt="" class="immagine"></button>
+                  <p class="title">Get Out</p>
+              </div>-->
+          </div>
+      </div>
+      <div class="quinto_pezzo">
+          <input type="checkbox" id="open_menu2" class="hamburger-checkbox2">
+
+          <div class="hamburger-icon2">
+              <label for="open_menu2" id="hamburger-label2">
+                  <span class="spanio"></span>
+                  <span class="spanio"></span>
+                  <span class="spanio"></span>
+              </label>
+          </div>
+
+          <div class="menu-pane2">
+              <nav>
+                  <div class="lateral">
+                      <form action="" id="form" method="get" autocomplete="off">
+                         <input type="text" class="search" placeholder="Inserisci il nome del film">
+                          <button type="submit" class="button"><img src="/static/images/lente.png"></button>
+                      </form>
+                  </div>
+              </nav>
           </div>
       </div>
   </div>
+   <script src="/static/js/SearchMovies.js"></script>
  </body>
 </html>
