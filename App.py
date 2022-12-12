@@ -1,10 +1,17 @@
-from flask import Flask, render_template, url_for, redirect, flash, session, abort
+import pathlib
+import requests
+
+from flask import Flask, render_template, url_for, redirect, flash, session, abort, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError, Regexp, EqualTo
 from flask_bcrypt import Bcrypt
+from google.oauth2 import id_token
+from google_auth_oauthlib.flow import Flow
+from pip._vendor import cachecontrol
+import google.auth.transport.requests
 
 
 import os
@@ -151,10 +158,12 @@ def login_is_required(function):
 GOOGLE_CLIENT_ID = "393401022050-3f2qujg19c5l6chs8ga1a125p92l1v9p.apps.googleusercontent.com"
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 
+
 flow = Flow.from_client_secrets_file(
-client_secrets_file=client_secrets_file,
-scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-redirect_uri="http://localhost:8000/gcallback")
+    client_secrets_file=client_secrets_file,
+    scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
+    redirect_uri="http://localhost:8000/gcallback"
+)
 
 @app.route('/glogin')
 def google_login():
@@ -164,7 +173,25 @@ def google_login():
 
 @app.route('/gcallback')
 def google_callback():
-    pass
+    flow.fetch_token(authorization_response=request.url)
+
+    if not session["state"] == request.args["state"]:
+        abort(500)  # State does not match!
+
+    credentials = flow.credentials
+    request_session = requests.session()
+    cached_session = cachecontrol.CacheControl(request_session)
+    token_request = google.auth.transport.requests.Request(session=cached_session)
+
+    id_info = id_token.verify_oauth2_token(
+        id_token=credentials._id_token,
+        request=token_request,
+        audience=GOOGLE_CLIENT_ID
+    )
+
+    session["google_id"] = id_info.get("sub")
+    session["name"] = id_info.get("name")
+    return redirect("/gprotected_area")
 
 @app.route('/glogout')
 def google_logout():
@@ -174,7 +201,7 @@ def google_logout():
 @app.route('/gprotected_area')
 @login_is_required
 def google_protected_area():
-    return "protected! <a href ='/logout'><button>Logout</button></a>"
+    return redirect(url_for('homepage'))
 
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
     app.run(host="localhost", port=8000, debug=True)
