@@ -192,21 +192,9 @@ def google_callback():
 
     session["google_id"] = id_info.get("sub")
     session["name"] = id_info.get("name")
-<<<<<<< HEAD
     return redirect("/homepage")
-=======
-    return redirect("/gprotected_area")
->>>>>>> origin/main
 
 
-@app.route('/gprotected_area')
-@login_is_required
-def google_protected_area():
-<<<<<<< HEAD
-    return f"Benvenuto {session['name']}<a href='/homepage'><button>Homepage</button></a>"
-=======
-    return redirect(url_for('homepage'))
->>>>>>> origin/main
 
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
     app.run(host="localhost", port=8000, debug=True)
