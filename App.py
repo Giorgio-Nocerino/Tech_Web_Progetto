@@ -19,6 +19,7 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 
 app = Flask(__name__)
+
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -163,7 +164,7 @@ client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-    redirect_uri="http://localhost:8000/gcallback"
+    redirect_uri="http://localhost:9000/gcallback"
 )
 
 @app.route('/glogin')
@@ -197,5 +198,5 @@ def google_callback():
 
 
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
-    app.run(host="localhost", port=8000, debug=True)
+    app.run(host="localhost", port=9000, debug=True)
 # Store this code in 'app.py' file
