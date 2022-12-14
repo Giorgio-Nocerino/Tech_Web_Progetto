@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Horror Movieland</title>
 </head>
  <body>
@@ -70,14 +70,14 @@
               <div class="dropdown3">
                   <button class="dropbtn3"><p>Film A-Z</p></button>
               </div>
-              <div class="dropdown4">
+              <div class="dropdown4" id="cerca">
                   <button class="dropbtn4"><p>Cerca</p></button>
               </div>
           </div>
      </div>
       <div class="quarto_pezzo">
           <div class="movies">
-              <!--<div class="movie">
+             <!-- <div class="movie">
                   <button class="box"><img src="/static/images/La%20casa%20di%20Jack.jpg" alt="" class="immagine"></button>
                   <p class="title">La casa di Jack</p>
               </div>
@@ -95,8 +95,8 @@
               </div>
               <div class="movie">
                   <button class="box"><img src="/static/images/Get%20Out.jpg" alt="" class="immagine"></button>
-                  <p class="title">Get Out</p>
-              </div>-->
+                  <p class="title">Get Out</p>-->
+              </div>
           </div>
       </div>
       <div class="quinto_pezzo">
@@ -110,18 +110,19 @@
               </label>
           </div>
 
-          <div class="menu-pane2">
+          <div class="menu-pane2" id="lateralio">
               <nav>
                   <div class="lateral">
                       <form action="" id="form" method="get" autocomplete="off">
-                         <input type="text" class="search" placeholder="Inserisci il nome del film">
-                          <button type="submit" class="button"><img src="/static/images/lente.png"></button>
+                         <input id="search-text" type="text" class="search" placeholder="Inserisci il nome del film">
+                          <button type="submit" id="search-submit" class="button"><img src="/static/images/lente.png"></button>
                       </form>
                   </div>
+                  <button id="close_lateral"></button>
               </nav>
           </div>
       </div>
   </div>
-  <script src="/templates/CercaFilm.js"></script>
+  <script src="/static/js/CercaFilm.js"></script>
  </body>
 </html>
