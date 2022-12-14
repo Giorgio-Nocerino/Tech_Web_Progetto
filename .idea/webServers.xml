@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="12231a72-07ff-46d6-9897-5ea587272ba4" name="GeoWeb" url="http://localhost/8000">
+        <fileTransfer mountedRoot="C:\Users\giorg\WebstormProjects\Tech_Web_Progetto" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
