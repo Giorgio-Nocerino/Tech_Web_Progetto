@@ -2,7 +2,7 @@ body{
     background-image: url("/static/images/dark.jpg");
     background-repeat:repeat-x;
     background-attachment: fixed;
-    background-size: 1536px 760px;
+    background-size: 1536px 794px;
 }
 
 html{
@@ -283,7 +283,7 @@ input.hamburger-checkbox {
 
 }
 
-#open_menu2:checked ~ .menu-pane2 {
+/*#open_menu2:checked ~ .menu-pane2 {
     top: 0;
     left: 30px;
     transform: translateX(-30px);
@@ -291,9 +291,16 @@ input.hamburger-checkbox {
     opacity: 80%;
     z-index: 99;
 
+}*/
+
+.is_open{ /*variabile incognito*/
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000);
+    opacity: 80%;
+    z-index: 99;
 }
-
-
 
 #open_menu2:checked ~ .hamburger-icon2 .spanio:nth-of-type(2) {
     transform: rotate(-25deg);
