@@ -1,0 +1,23 @@
+{
+  "movies": [{
+    "name": "La casa di Jack",
+    "img": "\\static\\images\\lacasadiJack.jpg"
+  },
+    {
+      "name": "The Northman",
+      "img": "/static/images/The%20Northman.jpg"
+    },
+    {
+      "name": "La casa delle bambole",
+      "img": "/static/images/La%20casa%20delle%20bambole.jpg"
+    },
+    {
+      "name": "Midsommar",
+      "img": "/static/images/Midsommar.jpg"
+    },
+    {
+      "name": "Get Out",
+      "img": "/static/images/Get%20Out.jpg"
+    }
+  ]
+}
