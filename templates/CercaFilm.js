@@ -10,7 +10,7 @@ const getData = async()=>{
         let response = await fetch(jsonData);
         let data = await response.json();
         console.log(data)
-        data.Movies.forEach(m => mov.push(m));
+        data.movies.forEach(m => mov.push(m));
         //appende dal DOM
         renderMovies(mov);
         //seleziona la carta elemento on clicco
