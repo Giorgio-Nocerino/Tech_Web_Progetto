@@ -151,6 +151,10 @@ def manual():
 def account():
     return render_template('Account.html')
 
+@app.route('/homepage/LaCasaDiJack')
+def movie1():
+    return render_template('Movie1.html')
+
 ############################################################################
 
 
