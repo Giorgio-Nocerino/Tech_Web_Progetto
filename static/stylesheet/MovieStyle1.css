@@ -1,0 +1,36 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+}
+
+.movie_mother header .title{
+    background-color: transparent;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy;
+    color: white;
+}
+
+.photo{
+    position: relative;
+    float: left;
+    left: 3%;
+    width: 30%;
+    height: 570px;
+    background: #ccc;
+    padding: 20px;
+}
+
+.photo #CJ{
+    position: relative;
+    float: right;
+    width:400px;
+    height:550px;
+
+}
