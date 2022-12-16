@@ -29,8 +29,31 @@ html{
 
 .photo #CJ{
     position: relative;
+    border-radius: 15px;
     float: right;
     width:400px;
     height:550px;
+}
 
+article {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 3%;
+    padding: 30px;
+    width: 60%;
+    background-color: #f1f1f1;
+    height: 500px;
+    text-align: center;
+}
+
+article h1{
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+article .plot{
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
 }
