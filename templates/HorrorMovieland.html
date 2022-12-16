@@ -55,7 +55,7 @@
         <h1 class="h1first">Ciao {{ current_user.username }}, benvenuto su </h1>
           <h1 class="h1second"> Horror Movieland!</h1>
           {% else %}
-          <h1 class="h1first">Ciao {{ session['name'] }}, benvenuto su </h1>
+          <h1 class="h1first">Ciao {{session['name']}}, benvenuto su</h1>
           <h1 class="h1second"> Horror Movieland!</h1>
           {% endif %}
     </div>
@@ -100,16 +100,6 @@
           </div>
       </div>
       <div class="quinto_pezzo">
-          <input type="checkbox" id="open_menu2" class="hamburger-checkbox2">
-
-          <div class="hamburger-icon2">
-              <label for="open_menu2" id="hamburger-label2">
-                  <span class="spanio"></span>
-                  <span class="spanio"></span>
-                  <span class="spanio"></span>
-              </label>
-          </div>
-
           <div class="menu-pane2" id="lateralio">
               <nav>
                   <div class="lateral">
@@ -118,7 +108,11 @@
                           <button type="submit" id="search-submit" class="button"><img src="/static/images/lente.png"></button>
                       </form>
                   </div>
-                  <button id="close_lateral"></button>
+                  <div class="returna" id="cerca">
+                      <button id="close_lateral">
+                          <img src="/static/images/close.png" alt="Close" id="chiudi">
+                      </button>
+                  </div>
               </nav>
           </div>
       </div>
