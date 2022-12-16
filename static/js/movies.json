@@ -1,23 +1,28 @@
 {
   "movies": [{
     "name": "La casa di Jack",
-    "img": "\\static\\images\\lacasadiJack.jpg"
+    "img": "/static/images/lacasadiJack.jpg",
+    "url": "http://localhost:9000/homepage/LaCasaDiJack"
   },
     {
       "name": "The Northman",
-      "img": "/static/images/The%20Northman.jpg"
+      "img": "/static/images/The%20Northman.jpg",
+      "url": "http://localhost:9000/homepage/TheNorthman"
     },
     {
       "name": "La casa delle bambole",
-      "img": "/static/images/La%20casa%20delle%20bambole.jpg"
+      "img": "/static/images/La%20casa%20delle%20bambole.jpg",
+      "url": "http://localhost:9000/homepage/LaCasaDelleBambole"
     },
     {
       "name": "Midsommar",
-      "img": "/static/images/Midsommar.jpg"
+      "img": "/static/images/Midsommar.jpg",
+      "url": "http://localhost:9000/homepage/Midsommar"
     },
     {
       "name": "Get Out",
-      "img": "/static/images/Get%20Out.jpg"
+      "img": "/static/images/Get%20Out.jpg",
+      "url": "http://localhost:9000/homepage/GetOut"
     }
   ]
 }
