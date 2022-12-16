@@ -177,6 +177,14 @@ input.hamburger-checkbox {
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
+.terzo_pezzo .navbar .dropdown1 .dropbtn1:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown1 .dropbtn1:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
 .dropbtn1 p{
     font-size: 20px;
     margin: 4px 2px;
@@ -191,6 +199,14 @@ input.hamburger-checkbox {
     color: white;
     background: linear-gradient(to bottom, #982626, #390C0C);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.terzo_pezzo .navbar .dropdown2 .dropbtn2:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown2 .dropbtn2:active{
+    background: linear-gradient(to top, #982626, #390C0C);
 }
 
 .dropbtn2 p{
@@ -209,6 +225,14 @@ input.hamburger-checkbox {
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
+.terzo_pezzo .navbar .dropdown3 .dropbtn3:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown3 .dropbtn3:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
 .dropbtn3 p{
     font-size: 20px;
     margin: 4px 2px;
@@ -223,6 +247,14 @@ input.hamburger-checkbox {
     color: white;
     background: linear-gradient(to bottom, #982626, #390C0C);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.terzo_pezzo .navbar .dropdown4 .dropbtn4:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown4 .dropbtn4:active{
+    background: linear-gradient(to top, #982626, #390C0C);
 }
 
 .dropbtn4 p{
@@ -261,28 +293,6 @@ input.hamburger-checkbox {
     font-family: "Barlow", sans-serif;
 }
 
-.hamburger-icon2 {
-    position: absolute;
-    z-index: 100;
-    top: 10vh;
-    left: 5vw;
-    padding-bottom: 2vh;
-    cursor: pointer;
-}
-
-.hamburger-icon2 .spanio {
-    height: 5px;
-    width: 30px;
-    background-color: white;
-    display: block;
-    border-radius: 5px;
-    margin: 5px 0px 5px 0px;
-    transition: 0.7s ease-in-out;
-    transform: none;
-    cursor: pointer;
-
-}
-
 /*#open_menu2:checked ~ .menu-pane2 {
     top: 0;
     left: 30px;
@@ -300,18 +310,6 @@ input.hamburger-checkbox {
     background: linear-gradient(to bottom, #3A3434, #000);
     opacity: 80%;
     z-index: 99;
-}
-
-#open_menu2:checked ~ .hamburger-icon2 .spanio:nth-of-type(2) {
-    transform: rotate(-25deg);
-}
-
-#open_menu2:checked ~ .hamburger-icon2 .spanio:nth-of-type(3) {
-    transform: rotate(25deg);
-}
-
-#open_menu2:checked ~ .hamburger-icon2 .spanio:nth-of-type(1) {
-    opacity: 0;
 }
 
 div.menu-pane2 {
@@ -368,17 +366,6 @@ div.menu-pane2 {
     height:42px;
 }
 
-input.hamburger-checkbox2 {
-    position: absolute;
-    z-index: 3;
-    top: 5vh;
-    left: 5vw;
-    width: 3vw;
-    opacity: 0;
-    height: 6vh;
-    cursor: pointer;
-}
-
 .quarto_pezzo .movies .movie .box .immagine{
     position: relative;
     top:-1px;
@@ -387,3 +374,32 @@ input.hamburger-checkbox2 {
     height: 282px;
     border-radius: 15px;
 }
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral{
+    position: relative;
+    left: 50%;
+    top: 1em;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #525151, #0E0C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral:hover{
+    background: linear-gradient(to bottom, #8a8a8a, #4f4f4f);
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral:active{
+    background: linear-gradient(to top, #525151, #0E0C0C);
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral #chiudi{
+    width:25px;
+    height:25px;
+}
+
+
+
