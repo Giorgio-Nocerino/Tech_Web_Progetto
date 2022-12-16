@@ -137,7 +137,6 @@ def signup():
    return render_template('SignupHML.html', form=form, msg=msg)
 
 @app.route('/homepage', methods=['GET', 'POST'])
-#@login_required
 def homepage():
    return render_template('HorrorMovieland.html')
 
@@ -193,12 +192,12 @@ def google_callback():
 
     session["google_id"] = id_info.get("sub")
     session["name"] = id_info.get("name")
-    return redirect("/protected_area")
+    return redirect("/homepage")
 
-@app.route("/protected_area")
-@login_is_required
-def protected_area():
-    return f"Hello {session['name']}! <br/> <a href='/homepage'><button>Homepage</button></a>"
+#@app.route("/protected_area")
+#@login_is_required
+#def protected_area():
+#    return f"Hello {session['name']}! <br/> <a href='/homepage'><button>Homepage</button></a>"
 
 if __name__ == '__main__': #Tutto questo serve per runnare l'app dal localhost
     app.run(host="localhost", port=9000, debug=True)
