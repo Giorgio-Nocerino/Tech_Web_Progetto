@@ -1,6 +1,4 @@
 const movies = document.querySelector('.movies');
-const form = document.querySelector('#form');
-let zIndex = 0;
 let mov = [];
 const jsonData = '/static/js/movies.json';
 
@@ -31,35 +29,12 @@ const renderMovies = (arr) =>{
     for(let i=0; i< arr.length; i++){
         movies.innerHTML += `
          <div class="movie" data-top="${i}">
-                  <button class="box"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></button>
+                  <button class="box" onclick="location.href='${arr[i].url}';"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></button>
                   <p class="title">${arr[i].name}</p>
               </div>
         `
     }
 }
-
-//Seleziona il film
-
-const moviesList = () => {
-    let cards = document.querySelectorAll('.movie');
-
-    cards.forEach(c => {
-        //incrementa il top margin
-        c.style.top = c.dataset.top * 50;
-        //aggiunge il margine di destra
-        c.style.marginRight = c.dataset.top + 5;
-        //aggiunge l'evento click
-        c.onclick = ()=>{
-            zIndex++
-
-            c.style.zIndex = zIndex;
-
-            c.querySelector('.title').style.background = "yellow";
-        }
-    });
-}
-
-
 
 //Cerca il film
 let input = document.getElementById('search-text'); //barra di ricerca
@@ -79,7 +54,7 @@ input.addEventListener('input', (e) =>{
 
 
     if (search === ''){
-        renderMovies(mov); //se cancelli i film ritornano
+        renderMovies(mov); //se cancelli, i film ritornano
         return
     }
 
