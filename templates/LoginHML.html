@@ -50,9 +50,12 @@
             <div class="forlogin">
                 <p>Oppure accedi con:</p>
                 <div class="foreign">
-                 <a href="{{ url_for('google_login') }}"><img src="/static/images/google.png" alt="Google"></a>
-                    <a href=""><img src="/static/images/facebook.png" alt="Facebook"></a>
-                 <a href=""><img src="/static/images/instagram.png" alt="Instagram"></a>
+                 <a href="{{ url_for('google_login') }}">
+                     <button class="btn_google">
+                         <img src="/static/images/google.png" alt="Google">
+                         <p class="gol">Google</p>
+                     </button>
+                 </a>
                 </div>
             </div>
             <div class="newaccount">
