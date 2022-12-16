@@ -280,7 +280,6 @@ input.hamburger-checkbox {
     width: 227px;
     height: 282px;
     background: linear-gradient(to bottom, #434141, #222222);
-    opacity: 70%;
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 .quarto_pezzo .movies .movie p{
@@ -292,16 +291,6 @@ input.hamburger-checkbox {
     color:white;
     font-family: "Barlow", sans-serif;
 }
-
-/*#open_menu2:checked ~ .menu-pane2 {
-    top: 0;
-    left: 30px;
-    transform: translateX(-30px);
-    background: linear-gradient(to bottom, #3A3434, #000);
-    opacity: 80%;
-    z-index: 99;
-
-}*/
 
 .is_open{ /*variabile incognito*/
     top: 0;
