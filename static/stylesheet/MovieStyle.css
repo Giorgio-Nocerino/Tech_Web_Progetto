@@ -21,7 +21,7 @@ html{
     position: relative;
     float: left;
     left: 3%;
-    width: 30%;
+    width: 27%;
     height: 520px;
     background: #ccc;
     padding: 20px;
@@ -64,23 +64,24 @@ article .plot{
     left: 50%;
     transform: translate(-50%);
     background-color: #777;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    height: 200px;
+    height: 32em;
 }
 
 .cast h1{
     font-size: 36px;
     font-weight: bolder;
     color: white;
+    font-family: "Barlow", sans-serif;
 }
 
 .cast .actors .actor .boxy{
     position: relative;
     border: none;
     border-radius: 15px;
-    width: 227px;
-    height: 282px;
+    width: 170px;
+    height: 170px;
     background: linear-gradient(to bottom, #434141, #222222);
 }
 
@@ -95,6 +96,25 @@ article .plot{
     gap: 35px;
 }
 
+.cast .actors .actor{
+ display: none;
+}
+
+.cast .actors .actor:nth-of-type(1){
+    display: block;
+}
+
+.cast .actors button{
+    position: relative;
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    transition: all 5000s ease-in-out;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
 .cast .actors .actor .name{
     position: relative;
     top: -1vw;
@@ -107,9 +127,7 @@ article .plot{
 
 .cast .actors .actor .boxy .image{
     position: relative;
-    top:-1px;
-    left: -6px;
-    width: 227px;
-    height: 282px;
+    width: 170px;
+    height: 170px;
     border-radius: 15px;
 }
