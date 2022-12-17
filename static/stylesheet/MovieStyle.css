@@ -22,7 +22,7 @@ html{
     float: left;
     left: 3%;
     width: 30%;
-    height: 570px;
+    height: 520px;
     background: #ccc;
     padding: 20px;
 }
@@ -31,8 +31,8 @@ html{
     position: relative;
     border-radius: 15px;
     float: right;
-    width:400px;
-    height:550px;
+    width: 400px;
+    height: 510px;
 }
 
 article {
@@ -56,4 +56,60 @@ article h1{
 article .plot{
     font-family: "Barlow", sans-serif;
     font-size: 24px;
+}
+
+.cast {
+    position: absolute;
+    top: 45em;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+}
+
+.cast h1{
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+.cast .actors .actor .boxy{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+}
+
+.cast .actors{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+.cast .actors .actor .name{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
+.cast .actors .actor .boxy .image{
+    position: relative;
+    top:-1px;
+    left: -6px;
+    width: 227px;
+    height: 282px;
+    border-radius: 15px;
 }
