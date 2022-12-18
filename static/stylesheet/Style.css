@@ -390,5 +390,223 @@ div.menu-pane2 {
     height:25px;
 }
 
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .terzo_pezzo .navbar{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    div.menu-pane2 {
+        background:linear-gradient(to bottom, #3A3434, #000);
+
+
+        position: absolute;
+        top: 0;
+        transform: translateX(-105vw);
+        width: 767px;
+        height: 752px;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 10px;
+        border-radius: 15px;
+        padding: 0 20em;
+    }
+
+    #form button{
+        background-color: #3A3434;
+        position: relative;
+        float: right;
+        right:-2em;
+        border: 0;
+        border-radius: 15px;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        width: 60px;
+        height:60px;
+    }
+
+    .quarto_pezzo .movies{
+        position: relative;
+        top: 7vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .primo_pezzo h1.h1first{
+        color: white;
+        font-family: "Copperplate Gothic Light", fantasy;
+        font-size: 30px;
+        position: relative;
+        left:-5em;
+    }
+
+    .primo_pezzo h1.h1second{
+        color: white;
+        font-family: "Copperplate Gothic", fantasy;
+        font-size: 50px;
+        position: relative;
+        top:-30px;
+        left:-3em;
+    }
+
+    .menu-pane .lateral .account #imgAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -25vw;
+        transform: translateY(9vw);
+        width: 45px;
+        height: 47.41px;
+    }
+
+    .menu-pane .lateral .account .writeAccount #nomeAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -23vw;
+        transform: translateY(8vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .menu-pane .lateral .manual .writeManual #nomeManual{
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 3vw;
+        transform: translateY(4vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+}
+
+@media screen and (max-width: 412px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .terzo_pezzo .navbar{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    div.menu-pane2 {
+        background:linear-gradient(to bottom, #3A3434, #000);
+
+
+        position: absolute;
+        top: 0;
+        transform: translateX(-188em);
+        width: 65em;
+        height: 123em;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 10px;
+        border-radius: 15px;
+        padding: 0 20em;
+    }
+
+    #form button{
+        background-color: #3A3434;
+        position: relative;
+        float: right;
+        right:-2em;
+        border: 0;
+        border-radius: 15px;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        width: 60px;
+        height:60px;
+    }
+
+    .quarto_pezzo .movies{
+        position: relative;
+        top: 7vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .primo_pezzo h1.h1first{
+        color: white;
+        font-family: "Copperplate Gothic Light", fantasy;
+        font-size: 45px;
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .primo_pezzo h1.h1second{
+        color: white;
+        font-family: "Copperplate Gothic", fantasy;
+        font-size: 72px;
+        position: relative;
+        top:-30px;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .menu-pane .lateral .account #imgAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -25vw;
+        transform: translateY(9vw);
+        width: 45px;
+        height: 47.41px;
+    }
+
+    .menu-pane .lateral .account .writeAccount #nomeAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -23vw;
+        transform: translateY(8vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .menu-pane .lateral .manual .writeManual #nomeManual{
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 3vw;
+        transform: translateY(4vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    body{
+        background-image: url("/static/images/dark2.jpg");
+        background-repeat:repeat-x;
+        background-attachment: fixed;
+        background-size: 66em 124em;
+    }
+
+}
 
 
