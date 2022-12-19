@@ -158,8 +158,6 @@ def movie1():
 ############################################################################
 
 
-
-
 GOOGLE_CLIENT_ID = "393401022050-3f2qujg19c5l6chs8ga1a125p92l1v9p.apps.googleusercontent.com"
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 
@@ -187,6 +185,8 @@ def google_callback():
     request_session = requests.session()
     cached_session = cachecontrol.CacheControl(request_session)
     token_request = google.auth.transport.requests.Request(session=cached_session)
+
+
 
     id_info = id_token.verify_oauth2_token(
         id_token=credentials._id_token,
