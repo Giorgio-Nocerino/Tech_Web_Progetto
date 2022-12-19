@@ -1,5 +1,5 @@
-/*window.onload = () => {
-    'use strict';*/
+window.onload = () => {
+    'use strict';
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
@@ -13,4 +13,4 @@
             console.log('ServiceWorker registration failed: ', err);
     });
     }
-//}
+}
