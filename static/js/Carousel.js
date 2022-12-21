@@ -1,4 +1,4 @@
-var n_blocks = 15;
+var n_blocks = 32;
 var current = 1;
 
 function successivo(){
@@ -24,5 +24,5 @@ function precedente(){
     }
     document.querySelector(".cast .actors .actor:nth-of-type(" + current + ")").style.display = "block";
 
-    setInterval(successivo, 5000);
+    //setInterval(successivo, 10000);
 }
