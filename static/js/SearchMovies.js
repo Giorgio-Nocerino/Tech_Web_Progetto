@@ -65,7 +65,7 @@ input.addEventListener('input', (e) =>{
 
 
         let results = mov.filter(m => {
-        return m.name.toLowerCase().startsWith(search); //escono i film che iniziano quella lettera
+        return m.name.toLowerCase().match(search); //escono i film che iniziano quella lettera
     });
 
 
