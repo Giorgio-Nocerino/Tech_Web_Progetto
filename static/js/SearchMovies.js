@@ -15,7 +15,7 @@ const getData = async()=>{
         //moviesList()
 
     }catch(err){
-        if(err) console.log(err)
+        if(err) console.log(err);
     }
 }
 
@@ -29,7 +29,7 @@ const renderMovies = (arr) =>{
     for(let i=0; i< arr.length; i++){
         movies.innerHTML += `
          <div class="movie" data-top="${i}">
-                  <button class="box" onclick="location.href='${arr[i].url}';"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></button>
+                  <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)"><a href="${arr[i].url}"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></a></button>
                   <p class="title">${arr[i].name}</p>
               </div>
         `
