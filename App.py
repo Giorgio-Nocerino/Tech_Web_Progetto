@@ -1,7 +1,7 @@
 import pathlib
 import requests
 
-from flask import Flask, render_template, url_for, redirect, flash, session, abort, request
+from flask import Flask, render_template, url_for, redirect, flash, session, abort, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
@@ -151,10 +151,18 @@ def manual():
 def account():
     return render_template('Account.html')
 
-@app.route('/homepage/LaCasaDiJack')
-def movie1():
-    return render_template('Movie1.html')
+@app.route('/homepage/movie')
+def movie():
+    return render_template('Movie.html')
 
+"""
+@app.route('/sw')
+def sw():
+    return app.send_static_file('sw.js')
+"""
+@app.route('/offline')
+def offline():
+    return app.send_static_file('offline.html')
 ############################################################################
 
 GOOGLE_CLIENT_ID = "393401022050-3f2qujg19c5l6chs8ga1a125p92l1v9p.apps.googleusercontent.com"
