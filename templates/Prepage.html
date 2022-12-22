@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="/static/js/manifest.json">
+    <link rel="manifest" href="/static/js/manifest.json" />
     <meta name="theme-color" content="white"/>
+    <link rel="stylesheet" href="/static/stylesheet/PrepageStyle.css">
     <title>Prepage</title>
 </head>
 <body>
     <div class="Pezzo">
-        <h1>Piacere, accedi o registrati</h1>
+        <header>
+            <h1>Piacere, accedi o registrati</h1>
+        </header>
         <a href="{{url_for('login')}}">Accedi</a><br>
         <a href="{{url_for('signup')}}">Registrati</a><br>
+        <button class="add-button">Add to home screen</button>
     </div>
     <script src="/static/js/main.js"></script>
 </body>
