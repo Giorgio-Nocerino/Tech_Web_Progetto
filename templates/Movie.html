@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/45b1634a10.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/static/stylesheet/MovieStyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="manifest" href="/static/js/manifest.json">
+  <meta name="theme-color" content="white"/>
+  <title>La casa di Jack</title>
+</head>
+<body>
+<div class="movie_mother">
+  <header id="heady">
+    <!--<h2 class="title">La Casa di Jack</h2>-->
+  </header>
+
+  <section>
+    <nav class="photo">
+      <img src="/static/images/lacasadiJack.jpg" alt="La Casa di Jack" id="CJ">
+    </nav>
+
+    <article>
+      <h1>Trama</h1>
+      <p class="plot">La Casa di Jack, il film diretto da Lars von Trier, ambientato nell’America degli anni '70
+        segue l'astuto Jack (Matt Dillon) attraverso cinque incidenti, e cioè gli omicidi che definiscono il suo
+        sviluppo come serial killer.
+        Viviamo la storia dal punto di vista di Jack che vede ogni omicidio come un'opera d'arte in sé,
+        anche se la sua disfunzione gli dà problemi nel mondo esterno. Nonostante l'inevitabile intervento
+        della polizia (cosa che provoca pressioni su Jack) si stia avvicinando, contrariamente a ogni logica,
+        questo lo spinge a rischiare sempre di più.
+        Lungo il cammino scopriamo le sue condizioni personali, i suoi problemi e i suoi pensieri attraverso
+        conversazioni ricorrenti con lo sconosciuto Virgilio, una miscela grottesca di sofismi mescolata
+        con un'auto-pietà quasi infantile e con spiegazioni approfondite di azioni difficili e pericolose.</p>
+    </article>
+  </section>
+
+  <footer class="cast">
+    <h1>Cast</h1>
+    <div class="actors">
+      <button class="precedente" onclick="precedente()"></button>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/jack.jfif" alt="" class="image"></div>
+        <p class="name">Matt Dillon</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/lady%201.jfif" alt="" class="image"></div>
+        <p class="name">Uma Thurman</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/simple.jfif" alt="" class="image"></div>
+        <p class="name">Riley Keough</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/verge.jfif" alt="" class="image"></div>
+        <p class="name">Bruno Ganz</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/lady%202.jfif" alt="" class="image"></div>
+        <p class="name">Siobhan Fallon Hogan</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/manuel%20alberto%20claro.jfif" alt="" class="image"></div>
+        <p class="name">Manuel Alberto Claro</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/lady%203.jfif" alt="" class="image"></div>
+        <p class="name">Sofie Grabol</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/willem%20dafoe.jfif" alt="" class="image"></div>
+        <p class="name">Willem Dafoe</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/ed.jpg" alt="" class="image"></div>
+        <p class="name">Ed Speleers</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/al.jfif" alt="" class="image"></div>
+        <p class="name">Jeremy Davies</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/s.p.jfif" alt="" class="image"></div>
+        <p class="name">David Bailie</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/man%202.jfif" alt="" class="image"></div>
+        <p class="name">Yoo Ji-tae</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/homme%201.jfif" alt="" class="image"></div>
+        <p class="name">Christian Arnold</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/jack%202.jpg" alt="" class="image"></div>
+        <p class="name">Emil Tholstrup</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/sonny.jfif" alt="" class="image"></div>
+        <p class="name">Jack McKenzie</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/charlotte%20gainsbourg.jpg" alt="" class="image"></div>
+        <p class="name">Charlotte Gainsbourg</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/female%20student.jfif" alt="" class="image"></div>
+        <p class="name">Marijana Jankovic</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/military%20man.jfif" alt="" class="image"></div>
+        <p class="name">Osy Ikhile</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/man%204.jpg" alt="" class="image"></div>
+        <p class="name">Jerker Fahlstrom</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/jean-marc%20barr.jfif" alt="" class="image"></div>
+        <p class="name">Jean-Marc Barr</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/udo%20kier.jfif" alt="" class="image"></div>
+        <p class="name">Udo Kier</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/man%203.jfif" alt="" class="image"></div>
+        <p class="name">Johannes Bah Kuhnke</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/police%20officer%204.jpg" alt="" class="image"></div>
+        <p class="name">Robert Jezek</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/rob.jpg" alt="" class="image"></div>
+        <p class="name">Robert G. Slade</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/glenn%20gould.jpg" alt="" class="image"></div>
+        <p class="name">Glenn Gould</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/benito%20mussolini.jfif" alt="" class="image"></div>
+        <p class="name">Benito Mussolini</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/emily%20watson.jpg" alt="" class="image"></div>
+        <p class="name">Emily Watson</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/albert%20speer.jfif" alt="" class="image"></div>
+        <p class="name">Albert Speer</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/kirsten%20olesen.jfif" alt="" class="image"></div>
+        <p class="name">Kirsten Olesen</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/cameron%20spurr.jfif" alt="" class="image"></div>
+        <p class="name">Cameron Spurr</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/s.p%202.jfif" alt="" class="image"></div>
+        <p class="name">David Bailey</p>
+      </div>
+      <div class="actor">
+        <div class="boxy"><img src="/static/images/ola%20normell.jpg" alt="" class="image"></div>
+        <p class="name">Ola Normelli</p>
+      </div>
+      <button class="successivo" onclick="successivo()"></button>
+    </div>
+  </footer>
+</div>
+<script src="/static/js/Carousel.js"></script>
+<script src="/static/js/ShowMovies.js"></script>
+<script src="/static/js/SearchMovies.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
