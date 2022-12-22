@@ -395,7 +395,7 @@ div.menu3 {
     position: absolute;
     top: 0;
     transform: translateX(-105vw);
-    width: 539px;
+    width: 250px;
     height: 760px;
     transition: 0.5s ease-in-out;
 }
@@ -406,6 +406,16 @@ div.menu3 {
     transform: translateX(-30px) !important;
     background: linear-gradient(to bottom, #3A3434, #000);
     z-index: 99;
+}
+
+.sesto_pezzo .menu3 nav .later{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .sesto_pezzo .menu3 nav .later .ab_button .aButton{
@@ -419,6 +429,9 @@ div.menu3 {
 }
 
 .aButton p{
+    position: relative;
+    top:50%;
+    transform: translateY(-130%);
     font-weight: bolder;
     font-size: 24px;
     font-family: "Barlow", sans-serif;
