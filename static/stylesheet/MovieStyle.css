@@ -23,7 +23,6 @@ html{
     left: 3%;
     width: 27%;
     height: 520px;
-    background: #ccc;
     padding: 20px;
 }
 
@@ -39,10 +38,11 @@ article {
     position: relative;
     float: left;
     top: 0;
-    left: 3%;
+    left: 5%;
+    border-radius: 20px;
     padding: 30px;
     width: 60%;
-    background-color: #f1f1f1;
+    background-color: #101010;
     height: 500px;
     text-align: center;
 }
@@ -51,11 +51,13 @@ article h1{
     font-family: "Barlow", sans-serif;
     font-size: 36px;
     font-weight: bolder;
+    color: white;
 }
 
 article .plot{
     font-family: "Barlow", sans-serif;
     font-size: 24px;
+    color: white;
 }
 
 .cast {
