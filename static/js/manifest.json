@@ -1,9 +1,9 @@
 {
-  "id": "/",
   "name": "Horror Movieland",
   "short_name": "Horror",
   "lang": "en-US",
-  "start_url": "http://localhost:9000/",
+  "start_url": "./",
+  "orientation": "portrait",
   "display": "standalone",
   "background_color": "white",
   "theme_color": "white",
@@ -12,5 +12,12 @@
       "src": "/static/images/skull.png",
       "sizes": "144x144",
       "type": "image/png"
-    }]
+    },
+    {
+      "src": "/static/images/skull.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
