@@ -1,8 +1,9 @@
 {
-  "name": "Horror Movieland",
+  "name": "Prepage",
   "short_name": "Horror",
   "lang": "en-US",
   "start_url": "./",
+  "scope": ".",
   "orientation": "portrait",
   "display": "standalone",
   "background_color": "white",
