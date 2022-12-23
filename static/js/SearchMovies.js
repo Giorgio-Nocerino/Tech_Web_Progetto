@@ -29,11 +29,14 @@ const renderMovies = (arr) =>{
     for(let i=0; i< arr.length; i++){
         movies.innerHTML += `
          <div class="movie" data-top="${i}">
-                  <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)"><a href="${arr[i].url}"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></a></button>
+                  <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></button>
                   <p class="title">${arr[i].name}</p>
               </div>
         `
     }
+
+
+
 }
 
 //Cerca il film
