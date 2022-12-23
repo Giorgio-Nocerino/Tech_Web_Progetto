@@ -1,8 +1,7 @@
 let cacheName = 'Tech_Web_Progetto';
 let filesToCache = [
     '/',
-    '/static/stylesheet/PrepageStyle.css',
-    '/static/images/skull.png'
+    '/static/stylesheet/PrepageStyle.css'
 ];
 self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
