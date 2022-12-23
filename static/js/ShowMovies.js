@@ -5,25 +5,25 @@ function genreClick(movies){
     var  xhttp = new XMLHttpRequest;
 
     xhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
+        if(this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(xhttp.responseText);
-
 
 
             var movies = response.movies;
 
             var item = '';
 
-            for(var i = 0; i < movies.length; i++){
+            for (var i = 0; i < movies.length; i++) {
 
-                if(genreSelected == movies[i].codex){
+                if (genreSelected == movies[i].codex) {
 
                     item += `<h2 class="title">${movies[i].name}</h2>
                 `
                 }
             }
 
-            document.getElementById('heady').innerHTML = item;
+            var new_page = window.open("");
+            new_page.document.write(item);
 
         }
     };
