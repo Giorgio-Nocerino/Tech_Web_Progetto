@@ -23,10 +23,10 @@ const getData = async()=>{
 getData()
 
 //Va in loop l'array e prende i valori dentro al DOM
-const renderMovies = (arr) =>{
+const renderMovies = (arr) => {
     movies.innerHTML = '';
 
-    for(let i=0; i< arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
         movies.innerHTML += `
          <div class="movie" data-top="${i}">
                   <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></button>
@@ -34,7 +34,6 @@ const renderMovies = (arr) =>{
               </div>
         `
     }
-
 
 
 }
