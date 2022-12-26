@@ -13,17 +13,32 @@ function genreClick(movies){
 
             var item = '';
 
+            var photo_plot = '';
+
             for (var i = 0; i < movies.length; i++) {
 
                 if (genreSelected == movies[i].codex) {
 
-                    item += `<h2 class="title">${movies[i].name}</h2>
-                `
+                    item += `<h2 class="title">${movies[i].name}</h2>`
+
+                    photo_plot += `<nav class="photo">
+                                     <img src="${movies[i].img}" alt="${movies[i].name}" id="henko">
+                                   </nav>
+
+                                   <article>
+                                     <h1>Trama</h1>
+                                     <p class="plot">${movies[i].plot}</p>
+                                   </article>`
                 }
             }
 
-            var new_page = window.open("");
-            new_page.document.write(item);
+            var result = document.getElementById("heady");
+
+            var res_pp = document.getElementById("section");
+
+            result.innerHTML = item;
+
+            res_pp.innerHTML = photo_plot;
 
         }
     };
@@ -31,4 +46,22 @@ function genreClick(movies){
     xhttp.open("GET", "/static/js/movies.json", true);
     xhttp.send();
 
+}
+
+
+
+let button_movies = document.getElementsByClassName('movie'); //pulsante film
+
+let button_close_movies = document.getElementsByClassName('return_back');
+
+   for (let i=0; i<button_movies.length; i++){
+       button_movies[i].onclick = function () { //se clicco il film, collega alla variabile anonima e si apre il menu4
+           document.getElementById('details_lateral').classList.add('is_open3');
+       }
+   }
+
+for (let i=0; i<button_close_movies.length; i++){
+    button_close_movies[i].onclick = function () { //se clicco il film, collega alla variabile anonima e si apre il menu4
+        document.getElementById('details_lateral').classList.remove('is_open3');
+    }
 }
