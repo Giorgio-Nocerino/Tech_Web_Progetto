@@ -138,7 +138,7 @@ def signup():
 
 @app.route('/homepage', methods=['GET', 'POST'])
 def homepage():
-   return render_template('HorrorMovieland.html')
+   return render_template('Homepage.html')
 
 
 @app.route('/homepage/manual', methods=['GET', 'POST'])
@@ -150,10 +150,6 @@ def manual():
 #login_required
 def account():
     return render_template('Account.html')
-
-@app.route('/homepage/movie')
-def movie():
-    return render_template('Movie.html')
 
 """
 @app.route('/sw')
