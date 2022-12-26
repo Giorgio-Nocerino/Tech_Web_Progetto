@@ -1,4 +1,4 @@
-const alfabetic_buttons = document.querySelector('.later');
+const alfabetic_buttons = document.querySelector('.buttons');
 let ab = [];
 const jsonFile = '/static/js/alfabetic_buttons.json';
 
@@ -38,7 +38,14 @@ const renderButtons = (arr) =>{
 
 let button_laterButtons = document.getElementById('AZ'); //pulsante film a-z
 
+let button_close_laterButtons = document.getElementById('come_back');
+
 button_laterButtons.onclick = function (){ //se clicco il pulsante film a-z, collega alla variabile anonima e si apre il menu3
     document.getElementById('right_lateral').classList.add('is_open2');
+
+}
+
+button_close_laterButtons.onclick = function (){ //se clicco il pulsante film a-z, collega alla variabile anonima e si apre il menu3
+    document.getElementById('right_lateral').classList.remove('is_open2');
 
 }
