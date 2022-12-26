@@ -1,0 +1,902 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+
+.primo_pezzo{
+    width: 1000px;
+    padding: 20px;
+    background-color: transparent;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.primo_pezzo h1.h1first{
+    color: white;
+    font-family: "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+}
+
+.primo_pezzo h1.h1second{
+    color: white;
+    font-family: "Copperplate Gothic", fantasy;
+    font-size: 50px;
+    position: relative;
+    top:-30px;
+}
+
+
+
+
+.hamburger-icon {
+    position: absolute;
+    z-index: 100;
+    top: 5vh;
+    left: 5vw;
+    padding-bottom: 2vh;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    transition: 0.7s ease-in-out;
+    transform: none;
+    cursor: pointer;
+
+}
+
+#open_menu:checked ~ .menu-pane {
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px);
+    background-color: #d9d9d9;
+    z-index: 99;
+
+}
+
+
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(2) {
+    transform: rotate(-25deg);
+    background-color: black;
+}
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(3) {
+    transform: rotate(25deg);
+    background-color: black;
+}
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(1) {
+    opacity: 0;
+}
+
+div.menu-pane {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 539px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-pane a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-pane p {
+    color: black;
+    font-size: 26px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-pane nav {
+    padding: 10%;
+}
+
+.menu-pane .lateral .manual #imgManual{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 1vw;
+    transform: translateY(5vw);
+}
+
+.menu-pane .lateral .manual .writeManual #nomeManual{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: 2vw;
+    transform: translateY(4vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .account #imgAccount{
+    position: relative;
+    float: left;
+    top: 0;
+    left: -12vw;
+    transform: translateY(9vw);
+    width: 45px;
+    height: 47.41px;
+}
+
+.menu-pane .lateral .account .writeAccount #nomeAccount{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: -11vw;
+    transform: translateY(8vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+input.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    top: 5vh;
+    left: 5vw;
+    width: 3vw;
+    opacity: 0;
+    height: 6vh;
+    cursor: pointer;
+}
+
+.terzo_pezzo .navbar{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.terzo_pezzo .navbar .dropdown1 .dropbtn1{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.terzo_pezzo .navbar .dropdown1 .dropbtn1:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown1 .dropbtn1:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn1 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.terzo_pezzo .navbar .dropdown2 .dropbtn2{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.terzo_pezzo .navbar .dropdown2 .dropbtn2:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown2 .dropbtn2:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn2 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.terzo_pezzo .navbar .dropdown3 .dropbtn3{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.terzo_pezzo .navbar .dropdown3 .dropbtn3:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown3 .dropbtn3:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn3 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.terzo_pezzo .navbar .dropdown4 .dropbtn4{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.terzo_pezzo .navbar .dropdown4 .dropbtn4:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.terzo_pezzo .navbar .dropdown4 .dropbtn4:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn4 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.quarto_pezzo .movies{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+.quarto_pezzo .movies .movie .box{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+.quarto_pezzo .movies .movie p{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
+.is_open{ /*variabile incognito*/
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000);
+    opacity: 80%;
+    z-index: 99;
+}
+
+div.menu-pane2 {
+    background:linear-gradient(to bottom, #3A3434, #000);
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 1536px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 20em;
+}
+
+#form input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    float: left;
+    left:-15em;
+    backdrop-filter: blur(4px) saturate(180%);
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+#form button{
+    background-color: #3A3434;
+    position: relative;
+    float: right;
+    right:-24em;
+    border: 0;
+    border-radius: 15px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    width: 60px;
+    height:60px;
+}
+
+#form button img{
+    width:42px;
+    height:42px;
+}
+
+.quarto_pezzo .movies .movie .box .immagine{
+    position: relative;
+    top:-1px;
+    left: -6px;
+    width: 227px;
+    height: 282px;
+    border-radius: 15px;
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral{
+    position: relative;
+    left: 50%;
+    top: 1em;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #525151, #0E0C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral:hover{
+    background: linear-gradient(to bottom, #8a8a8a, #4f4f4f);
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral:active{
+    background: linear-gradient(to top, #525151, #0E0C0C);
+}
+
+.quinto_pezzo .menu-pane2 .returna #close_lateral #chiudi{
+    width:25px;
+    height:25px;
+}
+
+/*CSS of Sesto Pezzo*/
+
+div.menu3 {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 250px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+    z-index: 150;
+}
+
+.is_open2{ /*variabile incognito*/
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000);
+    z-index: 99;
+}
+
+.sesto_pezzo .menu3 .buttons{
+    position: relative;
+    margin: 2em auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sesto_pezzo .menu3 .buttons .ab_button .aButton{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.aButton p{
+    position: relative;
+    top:50%;
+    transform: translateY(-130%);
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: "Barlow", sans-serif;
+    color: white;
+}
+
+.sesto_pezzo .menu3 .back #come_back{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.sesto_pezzo .menu3 .back #come_back:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.sesto_pezzo .menu3 .back #come_back:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.sesto_pezzo .menu3 .back #come_back #X_Close{
+    width:25px;
+    height:25px;
+}
+
+/*CSS of Settimo Pezzo*/
+
+div.menu4 {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 1536px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+    z-index: 150;
+}
+
+.is_open3{ /*variabile incognito*/
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000);
+    z-index: 99;
+}
+
+.movie_mother header .title{
+    background-color: transparent;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy;
+    color: white;
+}
+
+.photo{
+    position: relative;
+    float: left;
+    left: 3%;
+    width: 27%;
+    height: 520px;
+    padding: 20px;
+}
+
+.photo #henko{
+    position: relative;
+    border-radius: 15px;
+    float: right;
+    width: 400px;
+    height: 510px;
+}
+
+article {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 5%;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: #101010;
+    height: 500px;
+    text-align: center;
+}
+
+article h1{
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+article .plot{
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .terzo_pezzo .navbar{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    div.menu-pane2 {
+        background:linear-gradient(to bottom, #3A3434, #000);
+
+
+        position: absolute;
+        top: 0;
+        transform: translateX(-105vw);
+        width: 767px;
+        height: 752px;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 10px;
+        border-radius: 15px;
+        padding: 0 20em;
+    }
+
+    #form button{
+        background-color: #3A3434;
+        position: relative;
+        float: right;
+        right:-2em;
+        border: 0;
+        border-radius: 15px;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        width: 60px;
+        height:60px;
+    }
+
+    .quarto_pezzo .movies{
+        position: relative;
+        top: 7vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .primo_pezzo h1.h1first{
+        color: white;
+        font-family: "Copperplate Gothic Light", fantasy;
+        font-size: 30px;
+        position: relative;
+        left:-5em;
+    }
+
+    .primo_pezzo h1.h1second{
+        color: white;
+        font-family: "Copperplate Gothic", fantasy;
+        font-size: 50px;
+        position: relative;
+        top:-30px;
+        left:-3em;
+    }
+
+    .menu-pane .lateral .account #imgAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -25vw;
+        transform: translateY(9vw);
+        width: 45px;
+        height: 47.41px;
+    }
+
+    .menu-pane .lateral .account .writeAccount #nomeAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -23vw;
+        transform: translateY(8vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .menu-pane .lateral .manual .writeManual #nomeManual{
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 3vw;
+        transform: translateY(4vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+}
+
+@media screen and (max-width: 412px) { /*schermo Galaxy A70*/
+    .terzo_pezzo .navbar{
+        position: relative;
+        left:50%;
+        transform: translate(30%);
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    div.menu-pane2 {
+        background:linear-gradient(to bottom, #3A3434, #000);
+
+
+        position: absolute;
+        top: 0;
+        transform: translateX(-188em);
+        width: 65em;
+        height: 123em;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 10px;
+        border-radius: 15px;
+        padding: 0 20em;
+    }
+
+    #form button{
+        background-color: #3A3434;
+        position: relative;
+        float: right;
+        right:-2em;
+        border: 0;
+        border-radius: 15px;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        width: 60px;
+        height:60px;
+    }
+
+    .quarto_pezzo .movies{
+        position: relative;
+        top: 7vw;
+        left:50%;
+        transform: translate(30%);
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .primo_pezzo h1.h1first{
+        color: white;
+        font-family: "Copperplate Gothic Light", fantasy;
+        font-size: 45px;
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .primo_pezzo h1.h1second{
+        color: white;
+        font-family: "Copperplate Gothic", fantasy;
+        font-size: 72px;
+        position: relative;
+        top:-30px;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .menu-pane .lateral .account #imgAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -25vw;
+        transform: translateY(9vw);
+        width: 45px;
+        height: 47.41px;
+    }
+
+    .menu-pane .lateral .account .writeAccount #nomeAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -23vw;
+        transform: translateY(8vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .menu-pane .lateral .manual .writeManual #nomeManual{
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 3vw;
+        transform: translateY(4vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    body{
+        background-image: url("/static/images/dark2.jpg");
+        background-repeat:repeat-x;
+        background-attachment: fixed;
+        background-size: 66em 124em;
+    }
+
+    .quarto_pezzo .movies .movie .box{
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+        border: none;
+        border-radius: 15px;
+        width: 500px;
+        height: 700px;
+        background: linear-gradient(to bottom, #434141, #222222);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .quarto_pezzo .movies .movie p{
+        position: relative;
+        top: -1vw;
+        left:50%;
+        transform: translate(-50%);
+        font-size: 60px;
+        color:white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .quarto_pezzo .movies .movie .box .immagine{
+        position: relative;
+        top:-1px;
+        left: -6px;
+        width: 500px;
+        height: 700px;
+        border-radius: 15px;
+    }
+
+    .terzo_pezzo .navbar .dropdown1 .dropbtn1{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 370px;
+        height: 90px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .terzo_pezzo .navbar .dropdown2 .dropbtn2{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 370px;
+        height: 90px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .terzo_pezzo .navbar .dropdown3 .dropbtn3{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 370px;
+        height: 90px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .terzo_pezzo .navbar .dropdown4 .dropbtn4{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 370px;
+        height: 90px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .dropbtn1 p{
+        font-size: 60px;
+        margin: 4px 2px;
+    }
+
+    .dropbtn2 p{
+        font-size: 60px;
+        margin: 4px 2px;
+    }
+
+    .dropbtn3 p{
+        font-size: 60px;
+        margin: 4px 2px;
+    }
+
+    .dropbtn4 p{
+        font-size: 60px;
+        margin: 4px 2px;
+    }
+
+    .hamburger-icon span {
+        height: 17px;
+        width: 75px;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        margin: 5px 0px 5px 0px;
+        transition: 0.7s ease-in-out;
+        transform: none;
+        cursor: pointer;
+
+    }
+
+    div.menu-pane {
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        transform: translateX(-105vw);
+        width: 540px;
+        height: 125em;
+        transition: 0.5s ease-in-out;
+    }
+
+    #open_menu:checked ~ .hamburger-icon span:nth-of-type(2) {
+        transform: rotate(-25deg);
+        background-color: black;
+        position: fixed;
+    }
+
+    #open_menu:checked ~ .hamburger-icon span:nth-of-type(3) {
+        transform: rotate(25deg);
+        background-color: black;
+        position: fixed;
+        top:60px;
+    }
+
+    #open_menu:checked ~ .hamburger-icon span:nth-of-type(1) {
+        opacity: 0;
+        position: fixed;
+    }
+
+
+}
+
+
