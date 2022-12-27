@@ -472,8 +472,8 @@ div.menu4 {
     position: absolute;
     top: 0;
     transform: translateX(-105vw);
-    width: 1536px;
-    height: 760px;
+    width: 1518px;
+    height: 800px;
     transition: 0.5s ease-in-out;
     z-index: 150;
 }
@@ -488,17 +488,39 @@ div.menu4 {
 
 .movie_mother header .title{
     background-color: transparent;
-    padding: 30px;
+    position: relative;
+    top: 1em;
+    padding: 10px;
     text-align: center;
     font-size: 35px;
     font-family: "Copperplate Gothic", fantasy;
     color: white;
 }
 
+section{
+    display: flex;
+    position: relative;
+    top: 3em;
+    flex-direction: row;
+    justify-content: center;
+}
+.settimo_pezzo .menu4 .return_back #rb #R_Close{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#R_Close:hover{
+    transform: rotate(-360deg);
+
+}
+
 .photo{
     position: relative;
-    float: left;
-    left: 3%;
     width: 27%;
     height: 520px;
     padding: 20px;
@@ -508,15 +530,13 @@ div.menu4 {
     position: relative;
     border-radius: 15px;
     float: right;
-    width: 400px;
-    height: 510px;
+    width: 300px;
+    height: 410px;
 }
 
 article {
     position: relative;
-    float: left;
     top: 0;
-    left: 5%;
     border-radius: 20px;
     padding: 30px;
     width: 60%;
