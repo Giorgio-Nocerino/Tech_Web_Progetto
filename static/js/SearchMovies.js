@@ -87,7 +87,7 @@ input.addEventListener('input', (e) =>{
     }
 
 
-        let results = mov.filter(m => {
+    let results = mov.filter(m => {
         return m.name.toLowerCase().match(search); //escono i film che iniziano quella lettera
     });
 
@@ -112,4 +112,3 @@ button_menupane.onclick = function (){ //se clicco il pulsante cerca collega all
 button_close_menupane.onclick = function (){ //se clicco il pulsante X collega alla variabile anonima e si chiude il menu_pane2
     document.getElementById('lateralio').classList.remove('is_open');
 }
-
