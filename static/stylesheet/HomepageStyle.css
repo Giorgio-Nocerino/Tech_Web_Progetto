@@ -396,8 +396,8 @@ div.menu3 {
     position: absolute;
     top: 0;
     transform: translateX(-105vw);
-    width: 250px;
-    height: 760px;
+    width: 1519px;
+    height: auto;
     transition: 0.5s ease-in-out;
     z-index: 150;
 }
@@ -412,12 +412,13 @@ div.menu3 {
 
 .sesto_pezzo .menu3 .buttons{
     position: relative;
+    top: 32em;
     margin: 2em auto;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .sesto_pezzo .menu3 .buttons .ab_button .aButton{
@@ -440,8 +441,15 @@ div.menu3 {
     color: white;
 }
 
+.sesto_pezzo .menu3 .peliculas{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .sesto_pezzo .menu3 .back #come_back{
     position: relative;
+    margin-top: 38em;
     left: 50%;
     transform: translate(-50%);
     border: none;
