@@ -412,7 +412,7 @@ div.menu3 {
 
 .sesto_pezzo .menu3 .buttons{
     position: relative;
-    top: 32em;
+    top: -1em;
     margin: 2em auto;
     text-align: center;
     display: flex;
@@ -443,39 +443,28 @@ div.menu3 {
 
 .sesto_pezzo .menu3 .peliculas{
     position: relative;
-    left: 50%;
-    transform: translate(-15%);
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 img.imagen {
     width: 70px;
-    height: ;
-}
-
-.sesto_pezzo .menu3 .back #come_back{
-    position: relative;
-    margin-top: 38em;
-    left: 50%;
-    transform: translate(-50%);
-    border: none;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(to bottom, #982626, #390C0C);
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
-}
-
-.sesto_pezzo .menu3 .back #come_back:hover{
-    background: linear-gradient(to bottom, #c73434, #5b1414);
-}
-
-.sesto_pezzo .menu3 .back #come_back:active{
-    background: linear-gradient(to top, #982626, #390C0C);
+    height: 70px;
 }
 
 .sesto_pezzo .menu3 .back #come_back #X_Close{
-    width:25px;
-    height:25px;
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#X_Close:hover{
+    transform: rotate(-360deg);
+
 }
 
 /*CSS of Settimo Pezzo*/
@@ -931,5 +920,3 @@ article .plot{
 
 
 }
-
-
