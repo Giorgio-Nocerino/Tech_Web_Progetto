@@ -1,4 +1,5 @@
 const movies = document.querySelector('.movies');
+const peliculas = document.querySelector('.peliculas');
 let mov = [];
 const jsonData = '/static/js/movies.json';
 
@@ -11,6 +12,7 @@ const getData = async()=>{
         data.movies.forEach(m => mov.push(m));
         //appende dal DOM
         renderMovies(mov);
+        renderPeliculas(mov);
         //seleziona la carta elemento on clicco
         //moviesList()
 
@@ -37,6 +39,25 @@ const renderMovies = (arr) => {
 
 
 }
+
+const renderPeliculas = (arr) => {
+    peliculas.innerHTML = '';
+
+    for (let i = 0; i < arr.length; i++) {
+        peliculas.innerHTML += `
+         <div class="pelicula" data-top="${i}">
+                  <button class="obj" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="imagen"></button>
+                  <p class="titulo">${arr[i].name}</p>
+              </div>
+        `
+    }
+
+
+}
+
+
+
+
 
 //Cerca il film
 let input = document.getElementById('search-text'); //barra di ricerca
