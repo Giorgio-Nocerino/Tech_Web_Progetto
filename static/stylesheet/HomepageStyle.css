@@ -444,7 +444,12 @@ div.menu3 {
 .sesto_pezzo .menu3 .peliculas{
     position: relative;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-15%);
+}
+
+img.imagen {
+    width: 70px;
+    height: ;
 }
 
 .sesto_pezzo .menu3 .back #come_back{
