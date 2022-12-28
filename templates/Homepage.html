@@ -22,30 +22,30 @@
   <title>Horror Movieland</title>
 </head>
 <body>
-<div class="madre_pezzo"> <!--si divide in tanti pezzi come i puzzle-->
+ <div class="madre_pezzo"> <!--si divide in tanti pezzi come i puzzle-->
 
-  <div class="primo_pezzo">
-    <input type="checkbox" id="open_menu" class="hamburger-checkbox">
+    <div class="primo_pezzo">
+      <input type="checkbox" id="open_menu" class="hamburger-checkbox">
 
-    <div class="hamburger-icon">
-      <label for="open_menu" id="hamburger-label">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
+      <div class="hamburger-icon">
+        <label for="open_menu" id="hamburger-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
 
-    <div class="menu-pane">
-      <nav>
-        <div class="lateral">
-          <div class="manual">
-            <img src="/static/images/manual-icon%201.png" alt="manual" id="imgManual">
-            <div class="writeManual">
-              <a href="{{url_for('manual')}}" id="nomeManual">Manuale d'uso</a>
+      <div class="menu-pane">
+        <nav>
+          <div class="lateral">
+            <div class="manual">
+              <img src="/static/images/manual-icon%201.png" alt="manual" id="imgManual">
+              <div class="writeManual">
+                <a href="{{url_for('manual')}}" id="nomeManual">Manuale d'uso</a>
+              </div>
             </div>
-          </div>
-          <div class="account">
-            <img src="/static/images/user.png" alt="manual" id="imgAccount">
+            <div class="account">
+              <img src="/static/images/user.png" alt="manual" id="imgAccount">
             <div class="writeAccount">
               <a href="{{url_for('account')}}" id="nomeAccount">Account</a>
             </div>
@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-  <div class="quarto_pezzo">
+    <div class="quarto_pezzo">
     <div class="movies">
       <!-- <div class="movie">
            <button class="box"><img src="/static/images/La%20casa%20di%20Jack.jpg" alt="" class="immagine"></button>
@@ -99,10 +99,10 @@
        <div class="movie">
            <button class="box"><img src="/static/images/Get%20Out.jpg" alt="" class="immagine"></button>
            <p class="title">Get Out</p>-->
+      </div>
     </div>
   </div>
-</div>
-<div class="quinto_pezzo">
+ <div class="quinto_pezzo">
   <div class="menu-pane2" id="lateralio">
     <nav>
       <div class="lateral">
@@ -118,8 +118,8 @@
       </div>
     </nav>
   </div>
-</div>
-<div class="sesto_pezzo">
+ </div>
+ <div class="sesto_pezzo">
   <div class="menu3" id="right_lateral">
     <div class="back" id="AZ">
       <a id="come_back">
@@ -134,31 +134,26 @@
     </nav>
 
   </div>
-</div>
-<div class="settimo_pezzo">
-  <div class="menu4" id="details_lateral">
-    <div class="return_back" id="rback">
-      <a id="rb">
-        <img src="/static/images/return.png" alt="R" id="R_Close">
-      </a>
-    </div>
-    <nav>
-      <div class="movie_mother">
-        <header id="heady">
-          <!--title movie-->
-        </header>
-        <section id="section">
+ </div>
+ <div class="settimo_pezzo">
+     <div class="menu4" id="details">
+         <div class="return_back" id="rback">
+             <a id="rb">
+                 <img src="/static/images/return.png" alt="R" id="R_Close">
+             </a>
+         </div>
+         <div class="movie_mother">
+             <header id="heady">
+                 <!--title movie-->
+             </header>
+             <section id="section">
 
-        </section>
-      </div>
-    </nav>
-  </div>
-</div>
-</div>
-<script src="/static/js/SearchMovies.js"></script>
-<script src="/static/js/ShowMovies.js"></script>
-<script src="/static/js/SortMovies.js"></script>
-<script src="/static/js/AlfabeticButtons.js"></script>
-<script type="text/javascript" src="/static/js/movies.json"></script>
+             </section>
+         </div>
+     </div>
+ </div>
+  <script src="/static/js/SearchMovies.js"></script>
+  <script src="/static/js/ShowMovies.js"></script>
+  <script src="/static/js/AlfabeticButtons.js"></script>
 </body>
 </html>
