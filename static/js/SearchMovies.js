@@ -46,8 +46,8 @@ const renderPeliculas = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         peliculas.innerHTML += `
          <div class="pelicula" data-top="${i}">
-                  <button class="obj" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="imagen"></button>
                   <p class="titulo">${arr[i].name}</p>
+                  <button class="obj" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="imagen"></button>
               </div>
         `
     }
