@@ -17,6 +17,8 @@ function genreClick(movies){
 
             for (var i = 0; i < movies.length; i++) {
 
+                console.log(movies);
+
                 if (genreSelected == movies[i].codex) {
 
                     item += `<h2 class="title">${movies[i].name}</h2>`
@@ -49,19 +51,18 @@ function genreClick(movies){
 }
 
 
-
 let button_movies = document.getElementsByClassName('movie'); //pulsante film
 
 let button_close_movies = document.getElementsByClassName('return_back');
 
-   for (let i=0; i<button_movies.length; i++){
+  for (let i=0; i<button_movies.length; i++){
        button_movies[i].onclick = function () { //se clicco il film, collega alla variabile anonima e si apre il menu4
-           document.getElementById('details_lateral').classList.add('is_open3');
+           document.getElementById('details').classList.add('is_open3');
        }
-   }
+  }
 
 for (let i=0; i<button_close_movies.length; i++){
     button_close_movies[i].onclick = function () { //se clicco il film, collega alla variabile anonima e si apre il menu4
-        document.getElementById('details_lateral').classList.remove('is_open3');
+        document.getElementById('details').classList.remove('is_open3');
     }
 }
