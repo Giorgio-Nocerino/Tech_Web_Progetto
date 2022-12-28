@@ -443,8 +443,9 @@ div.menu3 {
 
 .sesto_pezzo .menu3 .peliculas{
     position: relative;
-    margin-left: 50%;
+    left: 0;
     transform: translate(-50%);
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -452,10 +453,21 @@ div.menu3 {
 
 .sesto_pezzo .menu3 .peliculas .pelicula{
     position: relative;
+    left: 0em;
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.pelicula p{
+    font-family: "Barlow", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+}
+
 
 img.imagen {
     width: 70px;
@@ -479,23 +491,22 @@ img.imagen {
 
 /*CSS of Settimo Pezzo*/
 
-div.menu4 {
+.settimo_pezzo .menu4{
     background-color: transparent;
     position: absolute;
     top: 0;
     transform: translateX(-105vw);
-    width: 1518px;
-    height: 800px;
+    width: 1519px;
+    height: auto;
     transition: 0.5s ease-in-out;
     z-index: 150;
 }
 
 .is_open3{ /*variabile incognito*/
-    top: 0;
-    left: 30px;
+    top: 0 !important;
+    left: 30px !important;
     transform: translateX(-30px) !important;
-    background: linear-gradient(to bottom, #3A3434, #000);
-    z-index: 99;
+    background: linear-gradient(to bottom, #3A3434, #000) !important;
 }
 
 .movie_mother header .title{
