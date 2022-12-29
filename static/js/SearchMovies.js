@@ -52,7 +52,6 @@ const renderPeliculas = (arr) => {
         `
     }
 
-
 }
 
 
