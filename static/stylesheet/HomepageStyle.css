@@ -443,7 +443,7 @@ div.menu3 {
 
 .sesto_pezzo .menu3 .peliculas{
     position: relative;
-    left: 0;
+    left: -20%;
     transform: translate(-50%);
     margin-top: 5em;
     display: flex;
