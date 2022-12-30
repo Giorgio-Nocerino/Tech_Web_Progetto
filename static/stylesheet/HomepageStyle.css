@@ -126,6 +126,14 @@ div.menu-pane {
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
 }
 
+.menu-pane .lateral .manual{
+    transition: 0.3s ease-in-out;
+}
+
+.menu-pane .lateral .manual:hover{
+    transform: scale(1.1);
+}
+
 .menu-pane .lateral .account #imgAccount{
     position: relative;
     float: left;
@@ -143,6 +151,14 @@ div.menu-pane {
     left: -11vw;
     transform: translateY(8vw);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .account{
+    transition: 0.3s ease-in-out;
+}
+
+.menu-pane .lateral .account:hover{
+    transform: scale(1.1);
 }
 
 input.hamburger-checkbox {
@@ -175,6 +191,7 @@ input.hamburger-checkbox {
     color: white;
     background: linear-gradient(to bottom, #982626, #390C0C);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .terzo_pezzo .navbar .dropdown1 .dropbtn1:hover{
@@ -199,6 +216,7 @@ input.hamburger-checkbox {
     color: white;
     background: linear-gradient(to bottom, #982626, #390C0C);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .terzo_pezzo .navbar .dropdown2 .dropbtn2:hover{
@@ -214,22 +232,24 @@ input.hamburger-checkbox {
     margin: 4px 2px;
 }
 
-.terzo_pezzo .navbar .dropdown3 .dropbtn3{
+.terzo_pezzo .navbar .dropdown3 a .dropbtn3{
     position: relative;
     border: none;
     border-radius: 10px;
     width: 227px;
     height: 40px;
     color: white;
+    text-decoration: none;
     background: linear-gradient(to bottom, #982626, #390C0C);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
 }
 
-.terzo_pezzo .navbar .dropdown3 .dropbtn3:hover{
+.terzo_pezzo .navbar .dropdown3 a .dropbtn3:hover{
     background: linear-gradient(to bottom, #c73434, #5b1414);
 }
 
-.terzo_pezzo .navbar .dropdown3 .dropbtn3:active{
+.terzo_pezzo .navbar .dropdown3 a .dropbtn3:active{
     background: linear-gradient(to top, #982626, #390C0C);
 }
 
@@ -247,6 +267,7 @@ input.hamburger-checkbox {
     color: white;
     background: linear-gradient(to bottom, #982626, #390C0C);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.3s;
 }
 
 .terzo_pezzo .navbar .dropdown4 .dropbtn4:hover{
@@ -272,8 +293,13 @@ input.hamburger-checkbox {
     justify-content: center;
     gap: 35px;
 }
+.quarto_pezzo .movies .card {
+    display: flex;
+    flex-direction: column;
+}
 
-.quarto_pezzo .movies .movie .box{
+
+.quarto_pezzo .movies .card .movie .box{
     position: relative;
     border: none;
     border-radius: 15px;
@@ -281,8 +307,34 @@ input.hamburger-checkbox {
     height: 282px;
     background: linear-gradient(to bottom, #434141, #222222);
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
 }
-.quarto_pezzo .movies .movie p{
+
+.quarto_pezzo .movies .card .fav_heart .fav_heart_btn{
+    position: relative;
+    bottom: 27em;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0073;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.quarto_pezzo .movies .card .fav_heart .fav_heart_btn img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+.quarto_pezzo .movies .card .movie .box:hover{
+    transform: scale(1.1);
+}
+
+.quarto_pezzo .movies .card .movie p{
     position: relative;
     top: -1vw;
     left:50%;
@@ -389,109 +441,9 @@ div.menu-pane2 {
     height:25px;
 }
 
-/*CSS of Sesto Pezzo*/
-
-div.menu3 {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    transform: translateX(-105vw);
-    width: 1519px;
-    height: auto;
-    transition: 0.5s ease-in-out;
-    z-index: 150;
-}
-
-.is_open2{ /*variabile incognito*/
-    top: 0;
-    left: 30px;
-    transform: translateX(-30px) !important;
-    background: linear-gradient(to bottom, #3A3434, #000);
-    z-index: 99;
-}
-
-.sesto_pezzo .menu3 .buttons{
-    position: relative;
-    top: -1em;
-    margin: 2em auto;
-    text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.sesto_pezzo .menu3 .buttons .ab_button .aButton{
-    position: relative;
-    border: none;
-    border-radius: 15px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(to bottom, #434141, #222222);
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
-}
-
-.aButton p{
-    position: relative;
-    top:50%;
-    transform: translateY(-130%);
-    font-weight: bolder;
-    font-size: 24px;
-    font-family: "Barlow", sans-serif;
-    color: white;
-}
-
-.sesto_pezzo .menu3 .peliculas{
-    position: relative;
-    left: -20%;
-    transform: translate(-50%);
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.sesto_pezzo .menu3 .peliculas .pelicula{
-    position: relative;
-    left: 0em;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.pelicula p{
-    font-family: "Barlow", sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    color: white;
-}
-
-
-img.imagen {
-    width: 70px;
-    height: 70px;
-}
-
-.sesto_pezzo .menu3 .back #come_back #X_Close{
-    width:45px;
-    height:45px;
-    transition: transform .5s;
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
-#X_Close:hover{
-    transform: rotate(-360deg);
-
-}
-
 /*CSS of Settimo Pezzo*/
 
-.settimo_pezzo .menu4{
+div.menu4{
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -564,7 +516,7 @@ article {
     padding: 30px;
     width: 60%;
     background-color: #101010;
-    height: 500px;
+    height: auto;
     text-align: center;
 }
 
@@ -579,6 +531,26 @@ article .plot{
     font-family: "Barlow", sans-serif;
     font-size: 24px;
     color: white;
+}
+
+/*Ottavo Pezzo*/
+
+div.menu5{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 520px;
+    height: auto;
+    transition: 0.5s ease-in-out;
+    z-index: 150;
+}
+
+.is_open4{ /*variabile incognito*/
+    top: 0 !important;
+    left: 30px !important;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000) !important;
 }
 
 
