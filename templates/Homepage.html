@@ -21,7 +21,7 @@
   <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
   <title>Horror Movieland</title>
 </head>
-<body onload="sort()">
+<body>
  <div class="madre_pezzo"> <!--si divide in tanti pezzi come i puzzle-->
 
     <div class="primo_pezzo">
@@ -70,8 +70,8 @@
       <div class="dropdown2">
         <button class="dropbtn2"><p>Sottogenere</p></button>
       </div>
-      <div class="dropdown3" id="AZ">
-        <button class="dropbtn3"><p>Film A-Z</p></button>
+      <div class="dropdown3" id="WL">
+          <a href="{{url_for('wishlist')}}"><button class="dropbtn3"><p>Wish List</p></button></a>
       </div>
       <div class="dropdown4" id="cerca">
         <button class="dropbtn4"><p>Cerca</p></button>
@@ -79,10 +79,12 @@
     </div>
   </div>
     <div class="quarto_pezzo">
-    <div class="movies">
-      <!-- <div class="movie">
-           <button class="box"><img src="/static/images/La%20casa%20di%20Jack.jpg" alt="" class="immagine"></button>
-           <p class="title">La casa di Jack</p>
+      <div class="movies">
+      <!--<div class="movie">
+           <button class="box">
+              <img src="/static/images/La%20casa%20di%20Jack.jpg" alt="" class="immagine">
+               <p class="title">La casa di Jack</p>
+              </button>
        </div>
        <div class="movie">
            <button class="box"><img src="/static/images/The%20Northman.jpg" class="immagine"></button>
@@ -101,7 +103,6 @@
            <p class="title">Get Out</p>-->
       </div>
     </div>
-  </div>
  <div class="quinto_pezzo">
   <div class="menu-pane2" id="lateralio">
     <nav>
@@ -117,22 +118,6 @@
         </button>
       </div>
     </nav>
-  </div>
- </div>
- <div class="sesto_pezzo">
-  <div class="menu3" id="right_lateral">
-    <div class="back" id="AZ">
-      <a id="come_back">
-        <img src="/static/images/return.png" alt="X" id="X_Close">
-      </a>
-    </div>
-    <div class="peliculas" id="alpha_movies">
-      <!--movies list-->
-    </div>
-    <nav class="buttons">
-      <!--Buttons from A to Z-->
-    </nav>
-
   </div>
  </div>
  <div class="settimo_pezzo">
@@ -152,9 +137,26 @@
          </div>
      </div>
  </div>
+ <div class="ottavo_pezzo">
+     <div class="menu5" id="genre_lateral">
+         <nav>
+             <div class="type1">
+                 <button class="typebtn1"><p>Horror - Livello Basso</p></button>
+             </div>
+             <div class="type2">
+                 <button class="typebtn2"><p>H - Drammatico</p></button>
+             </div>
+             <div class="type3">
+                 <button class="typebtn3"><p>H - Anime</p></button>
+             </div>
+             <div class="type4">
+                 <button class="typebtn4"><p>Horror - Livello Alto</p></button>
+             </div>
+         </nav>
+     </div>
+  </div>
+ </div>
   <script src="/static/js/SearchMovies.js"></script>
   <script src="/static/js/ShowMovies.js"></script>
- <script src="/static/js/SortMovies.js"></script>
-  <script src="/static/js/AlfabeticButtons.js"></script>
 </body>
 </html>
