@@ -23,7 +23,11 @@
       <a href="{{url_for('homepage')}}"><img src="/static/images/return.png" alt="Return" id="image"></a>
    </div>
   <div class="h1_first">
+      {% if current_user.is_authenticated %}
       <h1> Informazioni dell'account {{ current_user.username }}</h1>
+      {% else %}
+      <h1> Informazioni dell'account {{session['name']}}</h1>
+      {% endif %}
   </div>
   <div class="second_part">
       <div class="lightgrey_part">
@@ -36,6 +40,7 @@
               <div class="e1">
                   <p>Email:</p>
               </div>
+          {% if current_user.is_authenticated %}
           <div class="e2">
               <p>{{current_user.nome}}</p>
           </div>
@@ -45,6 +50,18 @@
           <div class="e2">
               <p>{{current_user.email}}</p>
           </div>
+          {% else %}
+          <div class="e2">
+              <p>{{session['name']}}</p>
+          </div>
+          <div class="e2">
+              <p>{{current_user.cognome}}</p>
+          </div>
+          <div class="e2">
+              <p>{{session['mail']}}</p>
+          </div>
+          {% endif %}
+
       </div>
       <div class="button">
               <div class="logout_btm">
