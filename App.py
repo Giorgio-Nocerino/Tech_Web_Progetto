@@ -151,6 +151,11 @@ def manual():
 def account():
     return render_template('Account.html')
 
+@app.route('/homepage/wishlist', methods=['GET', 'POST'])
+#login_required
+def wishlist():
+    return render_template('WishList.html')
+
 """
 @app.route('/sw')
 def sw():
