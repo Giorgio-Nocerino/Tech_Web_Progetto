@@ -1,5 +1,4 @@
 const movies = document.querySelector('.movies');
-const peliculas = document.querySelector('.peliculas');
 let mov = [];
 const jsonData = '/static/js/movies.json';
 
@@ -30,27 +29,22 @@ const renderMovies = (arr) => {
 
     for (let i = 0; i < arr.length; i++) {
         movies.innerHTML += `
-         <div class="movie" data-top="${i}">
-                  <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="immagine"></button>
-                  <p class="title">${arr[i].name}</p>
-              </div>
+        <div class="card">
+             <div class="movie" data-top="${i}">
+                  <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)">
+                      <img src="${arr[i].img}" alt="${arr[i].name}" class="immagine">
+                      <p class="title">${arr[i].name}</p>
+                  </button>
+                   
+             </div>
+             <div class="fav_heart">
+                 <button class="fav_heart_btn"><img src="/static/images/heart.png"></button>
+             </div>
+         </div>
+         
         `
     }
 
-
-}
-
-const renderPeliculas = (arr) => {
-    peliculas.innerHTML = '';
-
-    for (let i = 0; i < arr.length; i++) {
-        peliculas.innerHTML += `
-         <div class="pelicula" data-top="${i}">
-                  <p class="titulo">${arr[i].name}</p>
-                  <button class="obj" id="${arr[i].codex}" onclick="genreClick(this.id)"><img src="${arr[i].img}" alt="${arr[i].name}" class="imagen"></button>
-              </div>
-        `
-    }
 
 }
 
