@@ -1,0 +1,157 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+
+.first_piece{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+.first_piece h1.h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/*CSS of Second Piece*/
+
+div.menu4{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 1519px;
+    height: auto;
+    transition: 0.5s ease-in-out;
+    z-index: 150;
+}
+
+.is_open3{ /*variabile incognito*/
+    top: 0 !important;
+    left: 30px !important;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000) !important;
+}
+
+.movie_mother header .title{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy;
+    color: white;
+}
+
+section{
+    display: flex;
+    position: relative;
+    top: 3em;
+    flex-direction: row;
+    justify-content: center;
+}
+.settimo_pezzo .menu4 .return_back #rb #R_Close{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#R_Close:hover{
+    transform: rotate(-360deg);
+
+}
+
+.photo{
+    position: relative;
+    width: 27%;
+    height: 520px;
+    padding: 20px;
+}
+
+.photo #henko{
+    position: relative;
+    border-radius: 15px;
+    float: right;
+    width: 300px;
+    height: 410px;
+}
+
+article {
+    position: relative;
+    top: 0;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: #101010;
+    height: auto;
+    text-align: center;
+}
+
+article h1{
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+article .plot{
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+/*Ottavo Pezzo*/
+
+div.menu5{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 520px;
+    height: auto;
+    transition: 0.5s ease-in-out;
+    z-index: 150;
+}
+
+.is_open4{ /*variabile incognito*/
+    top: 0 !important;
+    left: 30px !important;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000) !important;
+}
+
+
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+
+
+}
+
+@media screen and (max-width: 412px) { /*schermo Galaxy A70*/
+
+
+    body{
+        background-image: url("/static/images/dark2.jpg");
+        background-repeat:repeat-x;
+        background-attachment: fixed;
+        background-size: 66em 124em;
+    }
+
+
+}
