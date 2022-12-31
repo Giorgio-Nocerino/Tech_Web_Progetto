@@ -25,6 +25,67 @@ html{
     font-size: 30px;
 }
 
+.second_piece .fav_movies{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+.second_piece .fav_movies .card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.second_piece .fav_movies .card .movie .box{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.second_piece .fav_movies .card .fav_bin .fav_bin_btn{
+    position: relative;
+    bottom: 27em;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.second_piece .fav_movies .card .fav_bin .fav_bin_btn img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+.second_piece .fav_movies .card .movie .box:hover{
+    transform: scale(1.1);
+}
+
+.second_piece .fav_movies .card .movie p{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
 /*CSS of Second Piece*/
 
 div.menu4{
