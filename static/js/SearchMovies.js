@@ -11,7 +11,6 @@ const getData = async()=>{
         data.movies.forEach(m => mov.push(m));
         //appende dal DOM
         renderMovies(mov);
-        renderPeliculas(mov);
         //seleziona la carta elemento on clicco
         //moviesList()
 
@@ -31,17 +30,16 @@ const renderMovies = (arr) => {
         movies.innerHTML += `
         <div class="card">
              <div class="movie" data-top="${i}">
-                  <button class="box" id="${arr[i].codex}" onclick="genreClick(this.id)">
+                  <button class="box" id="${arr[i].codex}" onclick="ShowDetails(this.id)">
                       <img src="${arr[i].img}" alt="${arr[i].name}" class="immagine">
                       <p class="title">${arr[i].name}</p>
                   </button>
                    
              </div>
              <div class="fav_heart">
-                 <button class="fav_heart_btn"><img src="/static/images/heart.png"></button>
+                 <button class="fav_heart_btn" id="${arr[i].codex}" onclick="AddMovie(this.id)"><img src="/static/images/heart.png"></button>
              </div>
          </div>
-         
         `
     }
 
