@@ -1,4 +1,4 @@
-function genreClick(movies){
+function ShowDetails(movies){
 
     var genreSelected = movies;
 
