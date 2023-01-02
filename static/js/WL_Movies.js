@@ -1,4 +1,4 @@
-/*const fav_movies = document.querySelector('.fav_movies');
+const fav_movies = document.querySelector('.fav_movies');
 let fav_mov = [];
 const jsonWishList = '/static/js/fav_movies.json';
 
@@ -31,32 +31,21 @@ const renderWishList = (arr) =>{
                    
              </div>
              <div class="fav_bin">
-                 <button class="fav_bin_btn"><img src="/static/images/bin.png"></button>
+                 <button class="fav_bin_btn" id="${arr[i].codex}" onclick="RemoveMovie(this.id)"><img src="/static/images/bin.png"></button>
              </div>
          </div>
         `
     }
-}*/
+}
 
 
 
 
 function AddMovie(codMovie){
     const codWL = codMovie;
-    const createServer = require("fs-remote/createServer").promises;
 
-     // createServer returns a net.Server
-    const server = createServer();
 
-    server.listen(9000, () => {
-        console.log("fs-remote server is listening on port 9000");
-    });
-
-    const createClient = require("fs-remote/createClient").promises;
-
-    const fs = createClient("http://localhost:9000");
-
-    //var fs = require('fs');
+    var fs = require('fs');
 
     var data = {}
     data.fav_movies = []
@@ -85,7 +74,8 @@ function AddMovie(codMovie){
 
 }
 
-/*function RemoveMovie(){
+function RemoveMovie(codMovie){
+    const codWL = codMovie;
     var fs = require('fs');
 
     var data = {}
@@ -100,18 +90,18 @@ function AddMovie(codMovie){
             if (err) throw err;
             console.log('complete');
         }
-    );
+    );*/
 
     fs.readFile('fav_movies.json',function(err,content){
         if(err) throw err;
         var parseJson = JSON.parse(content);
-        for (i=0; i <2 ; i++){
-            parseJson.fav_movies.pop({id:"RB"})
-        }
+
+        parseJson.fav_movies.pop({codex:codWL})
+
         fs.writeFile('fav_movies.json',JSON.stringify(parseJson),function(err){
             if(err) throw err;
         })
     })
-}*/
+}
 
 
