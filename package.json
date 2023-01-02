@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "fs": "^0.0.1-security",
     "fs-remote": "^0.1.9",
     "package.json": "^2.0.1"
   },
-  "name": "example"
+  "name": "example",
+  "type": "module"
 }
