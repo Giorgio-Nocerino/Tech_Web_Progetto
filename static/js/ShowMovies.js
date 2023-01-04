@@ -15,6 +15,8 @@ function ShowDetails(movies){
 
             var photo_plot = '';
 
+            var trailer = '';
+
             for (var i = 0; i < movies.length; i++) {
 
                 console.log(movies);
@@ -31,12 +33,17 @@ function ShowDetails(movies){
                                      <h1>Trama</h1>
                                      <p class="plot">${movies[i].plot}</p>
                                    </article>`
+
+                    trailer += `<h1>Cast</h1>
+                                <div class="trailer"></div>`
                 }
             }
 
             var result = document.getElementById("heady");
 
             var res_pp = document.getElementById("section");
+
+            var res_tl = document.getElementById("")
 
             result.innerHTML = item;
 
