@@ -1,5 +1,6 @@
 const movies = document.querySelector('.movies');
 let mov = [];
+let codMov;
 const jsonData = '/static/js/movies.json';
 
 //recupero dati dal file json
@@ -37,7 +38,7 @@ const renderMovies = (arr) => {
                    
              </div>
              <div class="fav_heart">
-                 <button class="fav_heart_btn" id="${arr[i].codex}" onclick="AddMovie(this.id)"><img src="/static/images/heart.png"></button>
+                 <button class="fav_heart_btn" id="${arr[i].codex}" onclick="AddMovies(this.id)"><img src="/static/images/heart.png" alt="Heart"></button>
              </div>
          </div>
         `
@@ -46,9 +47,9 @@ const renderMovies = (arr) => {
 
 }
 
-
-
-
+function AddMovies(codexWL){
+    AddMovie(codexWL);
+}
 
 //Cerca il film
 let input = document.getElementById('search-text'); //barra di ricerca
