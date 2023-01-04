@@ -9,11 +9,11 @@
     },
     {
       "id": 2,
-      "codex": "NM",
-      "name": "The Northman",
-      "img": "/static/images/The%20Northman.jpg",
-      "plot": "The Northman, film diretto da Robert Eggers, è ambientato all'inizio del X secolo e racconta la storia di una vendetta, quella cercata dal giovane Amleth (Alexander Skarsgård). Il ragazzo è il figlio del re Horwendil (Ethan Hawke), ma alla morte del padre non ha mai preso il suo posto. Quando era ancora un bambino, Amleth si trovava nel bosco con suo padre, ma a un tratto diversi dardi feriscono il genitore, che gli intima di nascondersi. È così che il ragazzo assiste all'uccisione paterna per mano di suo zio, Fjölnir (Claes Bang). Amleth riesce a scappare e mettersi in mare per fuggire via, ma farà ritorno da adulto nella sua terra natia per vendicare Horwendil e salvare anche sua madre, la regina Gudrún (Nicole Kidman).\nNel viaggio per raggiungere le fredde coste che non tocca da anni, Amleth incontra Olga (Anya Taylor-Joy), una giovane a cui il ragazzo rivela il vero motivo per cui è lì: la vendetta e la riconquista del regno. È così che troverà in lei una valida compagna in questa lotta, in cui l'obiettivo è solo uno: uccidere Fjölnir.",
-      "cast": [ "Alexander Skarsgård", "Anya Taylor-Joy"]
+      "codex": "CS",
+      "name": "Chiamata da uno Sconosciuto",
+      "img": "/static/images/unknownCall.jpeg",
+      "plot": "Chiamata da uno sconosciuto, film diretto da Simon West, vede protagonista Jill Johnson (Camilla Belle), una studentessa del liceo che, a causa di una punizione inflittale dai genitori, è costretta a fare da babysitter ai due figli dei Mandrakis (Derek de Lint e Kate Jennings Grant). La famiglia vive in una favolosa villa situata proprio sul lago. Quando la ragazza arriva, trova i bambini già a letto e, dopo qualche breve raccomandazione, i coniugi la salutano per andare a cena fuori. Nell’abitazione vive anche Rosa (Rosine Hatem), la domestica, che ha una dependance personale.\nLa serata sembra procedere al meglio, fino a quando squilla il telefono e dall'altra parte della cornetta c'è la voce di uno sconosciuto. Se in un primo momento Jill crede si tratti di uno scherzo, quando le chiamate diventano insistenti comincia a spaventarsi sul serio. Così decide di avvisare la polizia, che le dice che in realtà quelle telefonate provengono proprio dall'interno della casa. La ragazza è davvero terrorizzata e sente che l'unica soluzione sia quella di prendere i bambini e scappare dalla villa. Riuscirà a salvare se stessa e i piccoli?",
+      "cast": [ "Camilla Belle", "Tommy Flanagan"]
     },
     {
       "id": 3,
