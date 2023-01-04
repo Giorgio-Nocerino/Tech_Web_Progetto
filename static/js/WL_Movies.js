@@ -1,3 +1,4 @@
+
 const fav_movies = document.querySelector('.fav_movies');
 let fav_mov = [];
 const jsonWishList = '/static/js/fav_movies.json';
@@ -31,77 +32,12 @@ const renderWishList = (arr) =>{
                    
              </div>
              <div class="fav_bin">
-                 <button class="fav_bin_btn" id="${arr[i].codex}" onclick="RemoveMovie(this.id)"><img src="/static/images/bin.png"></button>
+                 <button class="fav_bin_btn" id="${arr[i].codex}" onclick="RemoveMovies(this.id)"><img src="/static/images/bin.png"></button>
              </div>
          </div>
         `
     }
 }
 
-
-
-
-function AddMovie(codMovie){
-    const codWL = codMovie;
-
-
-    var fs = require('fs');
-
-    var data = {}
-    data.fav_movies = []
-   /* for (i=0; i<2; i++){
-        var obj = {
-            id: "CJ"
-        }
-        data.fav_movies.push(obj)
-    }
-    fs.writeFile ("fav_movies.json", JSON.stringify(data), function(err) {
-            if (err) throw err;
-            console.log('complete');
-        }
-    );*/
-
-    fs.readFile('fav_movies.json',function(err,content){
-        if(err) throw err;
-        var parseJson = JSON.parse(content);
-
-        parseJson.fav_movies.push({codex: codWL})
-
-        fs.writeFile('fav_movies.json',JSON.stringify(parseJson),function(err){
-            if(err) throw err;
-        })
-    })
-
-}
-
-function RemoveMovie(codMovie){
-    const codWL = codMovie;
-    var fs = require('fs');
-
-    var data = {}
-    data.fav_movies = []
-    /*for (i=0; i<2; i++){
-        var obj = {
-            id: "CJ"
-        }
-        data.fav_movies.push(obj)
-    }
-    fs.writeFile ("fav_movies.json", JSON.stringify(data), function(err) {
-            if (err) throw err;
-            console.log('complete');
-        }
-    );*/
-
-    fs.readFile('fav_movies.json',function(err,content){
-        if(err) throw err;
-        var parseJson = JSON.parse(content);
-
-        parseJson.fav_movies.pop({codex:codWL})
-
-        fs.writeFile('fav_movies.json',JSON.stringify(parseJson),function(err){
-            if(err) throw err;
-        })
-    })
-}
 
 
