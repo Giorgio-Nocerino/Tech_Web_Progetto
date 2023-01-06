@@ -37,8 +37,8 @@ function ShowDetails(movies){
                     trailer += `<div class="trailer">
                                    <h1>Trailer</h1>
                                    <video controls>
-                                       <source src="${movies[i].trailer_mp4}" type="movie/mp4">
-                                       <source src="${movies[i].trailer_ogg}" type="movie/ogg">
+                                       <source src="${movies[i].trailer_mp4}" type="video/mp4">
+                                       <source src="${movies[i].trailer_ogg}" type="video/ogg">
                                    </video>
                                 </div>`
                 }
