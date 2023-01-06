@@ -449,7 +449,7 @@ div.menu4{
     top: 0;
     transform: translateX(-105vw);
     width: 1519px;
-    height: auto;
+    height: 1300px;
     transition: 0.5s ease-in-out;
     z-index: 150;
 }
@@ -545,11 +545,11 @@ footer{
     position: relative;
     top: 0;
     left:50%;
-    transform: translate(-50%);
+    transform: translate(-55%);
     border-radius: 20px;
     padding: 30px;
     width: 60%;
-    background-color: #101010;
+    background-color: transparent;
     height: auto;
     text-align: center;
 }
