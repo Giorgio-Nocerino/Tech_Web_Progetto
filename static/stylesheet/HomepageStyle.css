@@ -533,6 +533,39 @@ article .plot{
     color: white;
 }
 
+footer{
+    display: flex;
+    position: relative;
+    top: 3em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trailer {
+    position: relative;
+    top: 0;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: #101010;
+    height: auto;
+    text-align: center;
+}
+
+.trailer h1{
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+.trailer video{
+   width: 50em;
+    height: 25em;
+}
+
 /*Ottavo Pezzo*/
 
 div.menu5{
