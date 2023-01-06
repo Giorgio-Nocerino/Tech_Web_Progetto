@@ -34,8 +34,13 @@ function ShowDetails(movies){
                                      <p class="plot">${movies[i].plot}</p>
                                    </article>`
 
-                    trailer += `<h1>Cast</h1>
-                                <div class="trailer"></div>`
+                    trailer += `<div class="trailer">
+                                   <h1>Trailer</h1>
+                                   <video controls>
+                                       <source src="${movies[i].trailer_mp4}" type="movie/mp4">
+                                       <source src="${movies[i].trailer_ogg}" type="movie/ogg">
+                                   </video>
+                                </div>`
                 }
             }
 
@@ -43,11 +48,13 @@ function ShowDetails(movies){
 
             var res_pp = document.getElementById("section");
 
-            var res_tl = document.getElementById("")
+            var res_tl = document.getElementById("footer");
 
             result.innerHTML = item;
 
             res_pp.innerHTML = photo_plot;
+
+            res_tl.innerHTML = trailer;
 
         }
     };
