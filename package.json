@@ -1,9 +1,15 @@
 {
   "dependencies": {
+    "brfs": "^2.0.2",
+    "browserify-fs": "^1.0.0",
     "fs": "^0.0.1-security",
     "fs-remote": "^0.1.9",
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "uniq": "^1.0.1"
   },
   "name": "example",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
 }
