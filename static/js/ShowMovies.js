@@ -16,6 +16,8 @@
 
                 var trailer = '';
 
+                var cast = '';
+
                 for (var i = 0; i < movies.length; i++) {
 
                     console.log(movies);
@@ -40,6 +42,8 @@
                                        <source src="${movies[i].trailer_ogg}" type="video/ogg">
                                    </video>
                                 </div>`
+
+                        cast += ``
                     }
                 }
 
