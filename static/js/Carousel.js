@@ -1,6 +1,6 @@
 function ShowCast(codex_movie){
-    var cod=codex_movie;
-    var  xhttp = new XMLHttpRequest;
+    var cod = codex_movie;
+    var xhttp = new XMLHttpRequest;
 
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200) {
@@ -11,30 +11,28 @@ function ShowCast(codex_movie){
 
             for(var i=0; i<cast_carousel.length; i++){
                 if(cod==cast_carousel[i].codex){
-                    actor+=`<button class="precedente" onclick="precedente()"></button>
-      <div class="actor">
-        <div class="boxy"><img src="${cast_carousel[i].profile}" alt="" class="image"></div>
-        <p class="name">${cast_carousel[i].actor}</p>
-      </div>
-      <button class="successivo" onclick="successivo()"></button>
-`
+                    actor+=`
+                            <button class="precedente" onclick="precedente()"></button>
+                            <div class="actor">
+                               <div class="boxy"><img src="${cast_carousel[i].profile}" alt="" class="image"></div>
+                               <p class="name">${cast_carousel[i].actor}</p>
+                            </div>
+                            <button class="successivo" onclick="successivo()"></button>`
                 }
             }
-            var res_cast = document.getElementsByClassName("cast");
+            var res_cast = document.getElementById("actors");
             res_cast.innerHTML = actor;
+
         }
-    }
+    };
+
+
+
+    xhttp.open("GET", "/static/js/cast_carousel.json", true);
+    xhttp.send();
 }
 
-
-
-
-
-
-
-
-
-var n_blocks = 32;
+var n_blocks = 5;
 var current = 1;
 
 function successivo(){
@@ -62,3 +60,4 @@ function precedente(){
 
     //setInterval(successivo, 10000);
 }
+
