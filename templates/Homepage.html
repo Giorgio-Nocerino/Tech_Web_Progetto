@@ -21,7 +21,7 @@
   <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
   <title>Horror Movieland</title>
 </head>
-<body id="CJ" onload="ShowCast(this.id)">
+<body>
  <div class="madre_pezzo"> <!--si divide in tanti pezzi come i puzzle-->
 
     <div class="primo_pezzo">
@@ -138,9 +138,14 @@
 
              </footer>
              <footer class="cast">
-                <h1>Cast</h1>
-                 <div id="actors">
-
+                 <h1>Cast</h1>
+                 <div class="actors">
+                     <button class="precedente" onclick="precedente()"></button>
+                     <div class="actor">
+                         <div class="boxy"><img src="/static/images/castlacasadijack/jack.jfif" alt="" class="image"></div>
+                         <p class="name">Matt Dillon</p>
+                     </div>
+                     <button class="successivo" onclick="successivo()"></button>
                  </div>
              </footer>
          </div>
@@ -168,6 +173,5 @@
   <script src="/static/js/SearchMovies.js"></script>
   <script src="/static/js/ShowMovies.js"></script>
   <script src="/static/js/WL_Movies.js"></script>
-  <script src="/static/js/Carousel.js"></script>
 </body>
 </html>
