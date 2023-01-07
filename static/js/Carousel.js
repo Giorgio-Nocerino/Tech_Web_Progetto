@@ -60,4 +60,3 @@ function precedente(){
 
     //setInterval(successivo, 10000);
 }
-
