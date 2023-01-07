@@ -1,4 +1,4 @@
-function ShowCast(codex_movie){
+/*function ShowCast(codex_movie){
     var cod = codex_movie;
     var xhttp = new XMLHttpRequest;
 
@@ -30,7 +30,7 @@ function ShowCast(codex_movie){
 
     xhttp.open("GET", "/static/js/cast_carousel.json", true);
     xhttp.send();
-}
+}*/
 
 var n_blocks = 5;
 var current = 1;
