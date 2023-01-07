@@ -568,16 +568,18 @@ footer{
 
 .cast {
     position: absolute;
-    top: 45em;
-    left: 50%;
-    transform: translate(-30em);
-    background-color: #777;
+    top: 46em;
+    right: 50%;
+    transform: translate(-50%);
+    background-color: transparent;
     padding: 15px;
     text-align: center;
     height: 32em;
 }
 
 .cast h1{
+    position: relative;
+    left: 50%;
     font-size: 36px;
     font-weight: bolder;
     color: white;
