@@ -32,7 +32,7 @@
     xhttp.send();
 }*/
 
-var n_blocks = 5;
+var n_blocks = 3;
 var current = 1;
 
 function successivo(){
