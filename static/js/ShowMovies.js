@@ -1,31 +1,30 @@
-function ShowDetails(movies){
+ function ShowDetails(movies){
 
-    var genreSelected = movies;
+        var genreSelected = movies;
 
-    var  xhttp = new XMLHttpRequest;
+        var  xhttp = new XMLHttpRequest;
 
-    xhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.responseText);
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(xhttp.responseText);
 
+                var movies = response.movies;
 
-            var movies = response.movies;
+                var item = '';
 
-            var item = '';
+                var photo_plot = '';
 
-            var photo_plot = '';
+                var trailer = '';
 
-            var trailer = '';
+                for (var i = 0; i < movies.length; i++) {
 
-            for (var i = 0; i < movies.length; i++) {
+                    console.log(movies);
 
-                console.log(movies);
+                    if (genreSelected == movies[i].codex) {
 
-                if (genreSelected == movies[i].codex) {
+                        item += `<h2 class="title">${movies[i].name}</h2>`
 
-                    item += `<h2 class="title">${movies[i].name}</h2>`
-
-                    photo_plot += `<nav class="photo">
+                        photo_plot += `<nav class="photo">
                                      <img src="${movies[i].img}" alt="${movies[i].name}" id="henko">
                                    </nav>
 
@@ -34,35 +33,37 @@ function ShowDetails(movies){
                                      <p class="plot">${movies[i].plot}</p>
                                    </article>`
 
-                    trailer += `<div class="trailer">
+                        trailer += `<div class="trailer">
                                    <h1>Trailer</h1>
                                    <video controls>
                                        <source src="${movies[i].trailer_mp4}" type="video/mp4">
                                        <source src="${movies[i].trailer_ogg}" type="video/ogg">
                                    </video>
                                 </div>`
+                    }
                 }
+
+                var result = document.getElementById("heady");
+
+                var res_pp = document.getElementById("section");
+
+                var res_tl = document.getElementById("footer");
+
+                result.innerHTML = item;
+
+                res_pp.innerHTML = photo_plot;
+
+                res_tl.innerHTML = trailer;
+
             }
+        };
 
-            var result = document.getElementById("heady");
-
-            var res_pp = document.getElementById("section");
-
-            var res_tl = document.getElementById("footer");
-
-            result.innerHTML = item;
-
-            res_pp.innerHTML = photo_plot;
-
-            res_tl.innerHTML = trailer;
-
-        }
-    };
-
-    xhttp.open("GET", "/static/js/movies.json", true);
-    xhttp.send();
+        xhttp.open("GET", "/static/js/movies.json", true);
+        xhttp.send();
 
 }
+
+
 
 
 let button_movies = document.getElementsByClassName('movie'); //pulsante film
