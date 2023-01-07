@@ -21,7 +21,7 @@
   <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
   <title>Horror Movieland</title>
 </head>
-<body>
+<body id="CJ" onload="ShowCast(this.id)">
  <div class="madre_pezzo"> <!--si divide in tanti pezzi come i puzzle-->
 
     <div class="primo_pezzo">
@@ -137,8 +137,11 @@
              <footer id="footer">
 
              </footer>
-             <footer class="cast" id="CJ" onload="ShowCast(this.id)">
+             <footer class="cast">
+                <h1>Cast</h1>
+                 <div id="actors">
 
+                 </div>
              </footer>
          </div>
      </div>
@@ -165,5 +168,6 @@
   <script src="/static/js/SearchMovies.js"></script>
   <script src="/static/js/ShowMovies.js"></script>
   <script src="/static/js/WL_Movies.js"></script>
+  <script src="/static/js/Carousel.js"></script>
 </body>
 </html>
