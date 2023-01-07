@@ -43,7 +43,28 @@
                                    </video>
                                 </div>`
 
-                        cast += ``
+                        cast += `<button class="precedente" onclick="precedente()"></button>
+                                 <div class="actor">
+                                    <div class="boxy"><img src="${movies[i].profile1}" alt="" class="image"></div>
+                                    <p class="name">${movies[i].name_actor1}</p>
+                                 </div>
+                                 <div class="actor">
+                                    <div class="boxy"><img src="${movies[i].profile2}" alt="" class="image"></div>
+                                    <p class="name">${movies[i].name_actor2}</p>
+                                 </div>
+                                 <div class="actor">
+                                    <div class="boxy"><img src="${movies[i].profile3}" alt="" class="image"></div>
+                                    <p class="name">${movies[i].name_actor3}</p>
+                                 </div>
+                                 <div class="actor">
+                                    <div class="boxy"><img src="${movies[i].profile4}" alt="" class="image"></div>
+                                    <p class="name">${movies[i].name_actor4}</p>
+                                 </div>
+                                 <div class="actor">
+                                    <div class="boxy"><img src="${movies[i].profile5}" alt="" class="image"></div>
+                                    <p class="name">${movies[i].name_actor5}</p>
+                                 </div>
+                                 <button class="successivo" onclick="successivo()"></button>`
                     }
                 }
 
@@ -53,11 +74,15 @@
 
                 var res_tl = document.getElementById("footer");
 
+                var res_cast = document.getElementById("cast_actors")
+
                 result.innerHTML = item;
 
                 res_pp.innerHTML = photo_plot;
 
                 res_tl.innerHTML = trailer;
+
+                res_cast.innerHTML = cast;
 
             }
         };
