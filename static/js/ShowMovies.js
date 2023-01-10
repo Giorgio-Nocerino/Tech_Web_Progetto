@@ -70,7 +70,7 @@
 
                 var result = document.getElementById("heady");
 
-                var res_pp = document.getElementById("section");
+                var res_pp = document.getElementById("flex_section");
 
                 var res_tl = document.getElementById("footer");
 
