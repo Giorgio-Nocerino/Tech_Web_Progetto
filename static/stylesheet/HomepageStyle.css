@@ -782,7 +782,7 @@ div.menu5{
         top: 0;
         transform: translateX(-105vw);
         width: 767px;
-        height: 2350px;
+        height: 2670px;
         transition: 0.5s ease-in-out;
         z-index: 150;
     }
@@ -842,8 +842,7 @@ div.menu5{
     .photo #henko{
         position: relative;
         border-radius: 15px;
-        left: 50%;
-        translate(-50%);
+        left: 150%;
         bottom: 17px;
         width: 300px;
         height: 410px;
@@ -852,6 +851,8 @@ div.menu5{
     article {
         position: relative;
         top: 0;
+        left: 50%;
+        transform: translate(-50%);
         border-radius: 20px;
         padding: 30px;
         width: 60%;
