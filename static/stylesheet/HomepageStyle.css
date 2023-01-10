@@ -494,6 +494,13 @@ section{
 
 }
 
+#flex_section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .photo{
     position: relative;
     width: 27%;
@@ -767,7 +774,215 @@ div.menu5{
         transform: translateY(4vw);
         cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
     }
+    /*CSS of Settimo Pezzo*/
 
+    div.menu4{
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        transform: translateX(-105vw);
+        width: 767px;
+        height: 2350px;
+        transition: 0.5s ease-in-out;
+        z-index: 150;
+    }
+
+    .is_open3{ /*variabile incognito*/
+        top: 0 !important;
+        left: 30px !important;
+        transform: translateX(-30px) !important;
+        background: linear-gradient(to bottom, #3A3434, #000) !important;
+    }
+
+    .movie_mother header .title{
+        background-color: transparent;
+        position: relative;
+        top: 1em;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-family: "Copperplate Gothic", fantasy;
+        color: white;
+    }
+
+    section{
+        display: flex;
+        position: relative;
+        top: 3em;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .settimo_pezzo .menu4 .return_back #rb #R_Close{
+        width:45px;
+        height:45px;
+        transition: transform .5s;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    #R_Close:hover{
+        transform: rotate(-360deg);
+
+    }
+    #flex_section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photo{
+        position: relative;
+        width: 27%;
+        height: 520px;
+        padding: 20px;
+    }
+
+    .photo #henko{
+        position: relative;
+        border-radius: 15px;
+        left: 50%;
+        translate(-50%);
+        bottom: 17px;
+        width: 300px;
+        height: 410px;
+    }
+
+    article {
+        position: relative;
+        top: 0;
+        border-radius: 20px;
+        padding: 30px;
+        width: 60%;
+        background-color: #101010;
+        height: auto;
+        text-align: center;
+    }
+
+    article h1{
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    article .plot{
+        font-family: "Barlow", sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
+    .flex_footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        position: relative;
+        top: 3em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .trailer {
+        position: relative;
+        top: -20px;
+        border-radius: 20px;
+        padding: 30px;
+        width: 60%;
+        background-color: transparent;
+        height: auto;
+        text-align: center;
+    }
+
+    .trailer h1{
+        position: relative;
+        left: 50%;
+        transform: translate(-20%);
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .trailer video{
+        width: 43em;
+        height: 25em;
+    }
+
+    .cast {
+        position: relative;
+        background-color: transparent;
+        padding: 15px;
+        text-align: center;
+        height: 32em;
+    }
+
+    .cast h1{
+        position: relative;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .cast .actors .actor .boxy{
+        position: relative;
+        border: none;
+        border-radius: 15px;
+        width: 170px;
+        height: 170px;
+        background: linear-gradient(to bottom, #434141, #222222);
+    }
+
+    .cast .actors{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .cast .actors .actor{
+        display: none;
+    }
+
+    .cast .actors .actor:nth-of-type(1){
+        display: block;
+    }
+
+    .cast .actors button{
+        position: relative;
+        border: none;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to bottom, #434141, #222222);
+        transition: all 5000s ease-in-out;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .cast .actors .actor .name{
+        position: relative;
+        top: -1vw;
+        left:50%;
+        transform: translate(-50%);
+        font-size: 20px;
+        color:white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .cast .actors .actor .boxy .image{
+        position: relative;
+        width: 170px;
+        height: 170px;
+        border-radius: 15px;
+    }
 }
 
 @media screen and (max-width: 412px) { /*schermo Galaxy A70*/
