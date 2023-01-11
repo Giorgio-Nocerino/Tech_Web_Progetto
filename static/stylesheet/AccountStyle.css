@@ -10,10 +10,10 @@ body{
 }
 
 .h1_first{
-    width: 1000px;
-    padding: 20px;
     background-color: transparent;
-    margin: 10px auto;
+    position: relative;
+    top: 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -104,4 +104,15 @@ img:hover{
 
 .second_part .button .logout_btm .link_logout .logout_push:hover{
     box-shadow: 5px 5px 10px #1c1a1a;
+}
+
+@media screen and (max-width: 800px) {
+    .lightgrey_part .e2{
+        display: flex;
+        position: relative;
+        top:-30vw;
+        flex-direction: row;
+        justify-content: right;
+        margin-right: 20px;
+    }
 }
