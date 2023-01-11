@@ -22,6 +22,7 @@ img#image{
     height:45px;
     transition: transform .5s;
     cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    z-index: 1;
 }
 
 .h1_first h1{
