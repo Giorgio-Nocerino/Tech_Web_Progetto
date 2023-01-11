@@ -58,10 +58,18 @@ img{
 
 @media screen and (max-width: 800px) {
     .mother_place{
-        width:50em;
+        width:45em;
         height: auto;
         background-color: #101010;
         position: relative;
         border-radius: 15px;
+    }
+
+    img{
+        width:680px;
+        height:330px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
