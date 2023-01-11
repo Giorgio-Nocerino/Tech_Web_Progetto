@@ -525,6 +525,7 @@ section{
 
 .photo #henko{
     position: relative;
+    bottom: 3%;
     border-radius: 15px;
     float: right;
     width: 300px;
