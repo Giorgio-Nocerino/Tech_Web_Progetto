@@ -746,23 +746,6 @@ div.menu5{
         gap: 35px;
     }
 
-    .primo_pezzo h1.h1first{
-        color: white;
-        font-family: "Copperplate Gothic Light", fantasy;
-        font-size: 30px;
-        position: relative;
-        left:-5em;
-    }
-
-    .primo_pezzo h1.h1second{
-        color: white;
-        font-family: "Copperplate Gothic", fantasy;
-        font-size: 50px;
-        position: relative;
-        top:-30px;
-        left:-3em;
-    }
-
     .menu-pane .lateral .account #imgAccount{
         position: relative;
         float: left;
