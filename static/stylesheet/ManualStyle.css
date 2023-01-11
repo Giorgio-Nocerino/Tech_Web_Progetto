@@ -16,7 +16,7 @@ body{
 .mother_place{
     width:80em;
     height: auto;
-    background-color: #6c6c6c;
+    background-color: #101010;
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -54,4 +54,14 @@ img{
     top:15px;
     left:50%;
     transform: translate(-50%);
+}
+
+@media screen and (max-width: 800px) {
+    .mother_place{
+        width:50em;
+        height: auto;
+        background-color: #101010;
+        position: relative;
+        border-radius: 15px;
+    }
 }
