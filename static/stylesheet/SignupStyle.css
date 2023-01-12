@@ -10,29 +10,31 @@ html{
 
 }
 
+.primo_pezzo{
+    background-color: transparent;
+    position: relative;
+    top: 15em;
+    width:55em;
+    padding: 10px;
+    text-align: center;
+}
 .primo_pezzo h1{
     color:white;
     font-family: 'Copperplate Gothic Light', fantasy;
-    width:800px;
-    height:300px;
-    margin-top:200px;
-    margin-bottom:200px;
-    margin-right:50px;
-    margin-left:50px;
-    font-size:52px;
-    text-align: center;
+    font-size:42px;
 }
 
 p{
     font-size: 20px;
     font-family: 'Barlow', sans-serif;
+    color: white;
 }
 
 .pezzo_grande .secondo_pezzo{
     width: 400px;
     height: 470px;
     border-radius: 15px;
-    background-color: #b4afaf;
+    background-color: #101010;
     position: absolute;
     top:50%;
     left:75%;
@@ -268,20 +270,39 @@ a{
 }
 
 @media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .primo_pezzo{
+        background-color: transparent;
+        position: relative;
+        top: 5em;
+        left: 50%;
+        transform: translate(-50%);
+        width:40em;
+        padding: 10px;
+        text-align: center;
+    }
+    .primo_pezzo h1{
+        color:white;
+        font-family: 'Copperplate Gothic Light', fantasy;
+        font-size:42px;
+    }
+
     .pezzo_grande .secondo_pezzo {
-        top: 60%;
+        width: 400px;
+        height: 470px;
+        border-radius: 15px;
+        background-color: #101010;
+        position: absolute;
+        top:70%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .pezzo_grande .alreadyaccount{
+        position: relative;
+        top: 90%;
     }
 }
-@media screen and (max-height: 742px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
-    .pezzo_grande .secondo_pezzo {
-        top: 60%;
-    }
-}
-@media screen and (max-height: 626px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
-    .pezzo_grande .secondo_pezzo {
-        top: 70%;
-    }
-}
+
 #submit:hover{
     box-shadow: 5px 5px 10px grey;
 }
