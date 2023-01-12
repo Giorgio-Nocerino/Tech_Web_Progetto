@@ -169,16 +169,7 @@ a{
         text-align: center;
     }
 }
-/*@media screen and (max-height: 742px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso
-    .pezzo_grande .secondo_pezzo {
-        top: 60%;
-    }
-}
-@media screen and (max-height: 626px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso
-    .pezzo_grande .secondo_pezzo {
-        top: 70%;
-    }
-}*/
+
 button:hover{
     box-shadow: 5px 5px 10px grey;
 }
