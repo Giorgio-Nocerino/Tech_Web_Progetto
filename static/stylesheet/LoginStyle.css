@@ -133,21 +133,45 @@ a{
     font-size: 22px;
 }
 
-@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+@media screen and (max-width: 800px) {  /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .primo_pezzo{
+        background-color: transparent;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 10px;
+        margin-right: 50px;
+        text-align: center;
+    }
+    .primo_pezzo h1{
+        color:white;
+        font-family: 'Copperplate Gothic Light', fantasy;
+        font-size:42px;
+    }
+
     .pezzo_grande .secondo_pezzo {
-        top: 50%;
+        width: 400px;
+        height: 470px;
+        border-radius: 15px;
+        background-color: #101010;
+        position: absolute;
+        top:85%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 }
-@media screen and (max-height: 742px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+/*@media screen and (max-height: 742px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso
     .pezzo_grande .secondo_pezzo {
         top: 60%;
     }
 }
-@media screen and (max-height: 626px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+@media screen and (max-height: 626px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso
     .pezzo_grande .secondo_pezzo {
         top: 70%;
     }
-}
+}*/
 button:hover{
     box-shadow: 5px 5px 10px grey;
 }
@@ -170,5 +194,3 @@ button:hover{
     position: relative;
     top: -7px;
 }
-
-
