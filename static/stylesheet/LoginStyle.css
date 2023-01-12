@@ -11,30 +11,37 @@ html{
 div{
     text-align: center;
 }
+
+
+.primo_pezzo{
+    background-color: transparent;
+    position: relative;
+    top: 15em;
+    width:55em;
+    padding: 10px;
+    text-align: center;
+}
 .primo_pezzo h1{
     color:white;
     font-family: 'Copperplate Gothic Light', fantasy;
-    width:800px;
-    height:300px;
-    margin-top:200px;
-    margin-bottom:200px;
-    margin-right:50px;
-    margin-left:50px;
-    font-size:52px;
-    text-align: center;
-
+    font-size:42px;
 }
 
 p{
     font-size: 20px;
     font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+p.gol{
+    color: black;
 }
 
 .pezzo_grande .secondo_pezzo{
     width: 400px;
     height: 470px;
     border-radius: 15px;
-    background-color: #b4afaf;
+    background-color: #101010;
     position: absolute;
     top:50%;
     left:75%;
@@ -137,11 +144,11 @@ a{
     .primo_pezzo{
         background-color: transparent;
         position: relative;
-        top: 0;
+        top: 5em;
         left: 50%;
         transform: translate(-50%);
+        width:40em;
         padding: 10px;
-        margin-right: 50px;
         text-align: center;
     }
     .primo_pezzo h1{
@@ -156,7 +163,7 @@ a{
         border-radius: 15px;
         background-color: #101010;
         position: absolute;
-        top:85%;
+        top:70%;
         left:50%;
         transform: translate(-50%, -50%);
         text-align: center;
