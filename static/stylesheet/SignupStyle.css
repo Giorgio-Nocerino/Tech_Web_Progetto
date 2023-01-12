@@ -184,7 +184,7 @@ p{
     font-size: 18px;
     position: relative;
     float: right;
-    top:-5vw;
+    top:21em;
     right:15em;
     transform: translate(6, -15em);
 }
@@ -302,7 +302,7 @@ a{
         font-size: 18px;
         position: relative;
         float: right;
-        top:29em;
+        top:26.5em;
         right:15em;
     }
 
