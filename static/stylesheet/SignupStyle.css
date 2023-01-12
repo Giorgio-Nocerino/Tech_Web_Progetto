@@ -50,7 +50,7 @@ p{
     position: absolute;
     top: 60%;
     left: 15%;
-    background-color: #b4afaf;
+    background-color: #101010;
     border-radius: 15px;
 }
 
@@ -297,9 +297,24 @@ a{
         transform: translate(-50%, -50%);
         text-align: center;
     }
-    .pezzo_grande .alreadyaccount{
+    .pezzo_grande .alreadyaccount p {
+        color: #ffffff;
+        font-size: 18px;
         position: relative;
-        top: 90%;
+        float: right;
+        top:29em;
+        right:15em;
+    }
+
+    .pezzo_grande .avvertenze{
+        width: 505px;
+        height: 195px;
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #101010;
+        border-radius: 15px;
     }
 }
 
